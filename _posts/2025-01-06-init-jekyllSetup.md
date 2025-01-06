@@ -14,11 +14,10 @@ Jekyll is used to convert your markdown notes into a static site. This blog was 
 # Install chruby (Version Manager) and ruby-install (Package Manager)
 brew install chruby ruby-install
 
-
 # Check the latest Ruby Version: https://jekyllrb.com/docs/installation/macos/#:~:text=Install%20the-,latest,-stable%20version%20of
 ruby-install ruby 3.3.5
 
-#In ~/.zhsrc file
+#To Add to the ~/.zhsrc file . Have these declared after the homebrew path declaration
 echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
 echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
 echo "chruby ruby-3.3.5" >> ~/.zshrc
@@ -35,20 +34,16 @@ jekyll new siteName
 cd siteName
 git init
 
-#Sample hugo theme add as submodule
-bundle exec jekyll serve
+#Serve Project Locally On: http://localhost:4000
+bundle exec jekyll serve --livereload
 
-#Adding Content
+#For Ddding Content
 cd _posts/
 touch blogName.md
 
 #For Config Issues
 jekyll doctor
 
-#Serve Jekyll Projects
-#for local http://localhost:4000
-bundle exec jekyll serve --livereload
-
-#for production
+#To Build the Project for Production
 bundle build
 ```

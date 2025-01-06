@@ -686,7 +686,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="184 words"
+  title="185 words"
 >
   <em>1 min</em> read</span>
 
@@ -717,15 +717,13 @@
 12
 13
 14
-15
 </pre></td><td class="rouge-code"><pre><span class="c"># Install chruby (Version Manager) and ruby-install (Package Manager)</span>
 brew <span class="nb">install </span>chruby ruby-install
-
 
 <span class="c"># Check the latest Ruby Version: https://jekyllrb.com/docs/installation/macos/#:~:text=Install%20the-,latest,-stable%20version%20of</span>
 ruby-install ruby 3.3.5
 
-<span class="c">#In ~/.zhsrc file</span>
+<span class="c">#To Add to the ~/.zhsrc file . Have these declared after the homebrew path declaration</span>
 <span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
 <span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
 <span class="nb">echo</span> <span class="s2">"chruby ruby-3.3.5"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
@@ -755,30 +753,22 @@ gem <span class="nb">install </span>jekyll bundler
 15
 16
 17
-18
-19
-20
-21
 </pre></td><td class="rouge-code"><pre><span class="c">#Project Setup</span>
 jekyll new siteName
 <span class="nb">cd </span>siteName
 git init
 
-<span class="c">#Sample hugo theme add as submodule</span>
-bundle <span class="nb">exec </span>jekyll serve
+<span class="c">#Serve Project Locally On: http://localhost:4000</span>
+bundle <span class="nb">exec </span>jekyll serve <span class="nt">--livereload</span>
 
-<span class="c">#Adding Content</span>
+<span class="c">#For Ddding Content</span>
 <span class="nb">cd </span>_posts/
 <span class="nb">touch </span>blogName.md
 
 <span class="c">#For Config Issues</span>
 jekyll doctor
 
-<span class="c">#Serve Jekyll Projects</span>
-<span class="c">#for local http://localhost:4000</span>
-bundle <span class="nb">exec </span>jekyll serve <span class="nt">--livereload</span>
-
-<span class="c">#for production</span>
+<span class="c">#To Build the Project for Production</span>
 bundle build
 </pre></td></tr></tbody></table></code></div></div>
 
