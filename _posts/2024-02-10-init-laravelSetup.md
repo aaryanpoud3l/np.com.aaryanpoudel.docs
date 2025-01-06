@@ -1,5 +1,5 @@
 ---
-date: 2023-12-12T23:12:48+05:45
+date: 2024-02-10T23:12:48+05:45
 title: "PHP, Laravel, MySQL InitSetup on Ubuntu"
 description : "Docs On Setting Up PHP, Laravel & MySQl on Ubuntu"
 categories : ["Setups"]
