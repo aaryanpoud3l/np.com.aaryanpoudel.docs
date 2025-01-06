@@ -1,33 +1,33 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/</id>
+  <id>https://aaryanpoudel.com.np/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-01-06T23:48:33+05:45</updated>
+  <updated>2025-01-06T23:54:48+05:45</updated>
   <author>
     <name>Aaryan Poudel</name>
-    <uri>https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/</uri>
+    <uri>https://aaryanpoudel.com.np/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://aaryanpoudel.com.np/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/"/>
+    href="https://aaryanpoudel.com.np/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
   <rights> © 2025 Aaryan Poudel </rights>
-  <icon>https://aaryanpoudel.com.np//assets/img/favicons/favicon.ico</icon>
-  <logo>https://aaryanpoudel.com.np//assets/img/favicons/favicon-96x96.png</logo>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
     <title>Jekyll Installation on Mac</title>
-    <link href="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-jekyllSetup/" rel="alternate" type="text/html" title="Jekyll Installation on Mac" />
+    <link href="https://aaryanpoudel.com.np/posts/init-jekyllSetup/" rel="alternate" type="text/html" title="Jekyll Installation on Mac" />
     <published>2025-01-06T23:25:50+05:45</published>
   
     <updated>2025-01-06T23:25:50+05:45</updated>
   
-    <id>https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-jekyllSetup/</id>
-    <content src="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-jekyllSetup/" />
+    <id>https://aaryanpoudel.com.np/posts/init-jekyllSetup/</id>
+    <content src="https://aaryanpoudel.com.np/posts/init-jekyllSetup/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -63,13 +63,13 @@ brew install chruby ruby-install
   
   <entry>
     <title>CheatSheet for Markdown</title>
-    <link href="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/" rel="alternate" type="text/html" title="CheatSheet for Markdown" />
+    <link href="https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/" rel="alternate" type="text/html" title="CheatSheet for Markdown" />
     <published>2024-02-13T23:04:48+05:45</published>
   
     <updated>2025-01-06T22:52:19+05:45</updated>
   
-    <id>https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/</id>
-    <content src="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/" />
+    <id>https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/</id>
+    <content src="https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -142,13 +142,13 @@ Click Me
   
   <entry>
     <title>PHP, Laravel, MySQL InitSetup on Ubuntu</title>
-    <link href="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-laravelSetup/" rel="alternate" type="text/html" title="PHP, Laravel, MySQL InitSetup on Ubuntu" />
+    <link href="https://aaryanpoudel.com.np/posts/init-laravelSetup/" rel="alternate" type="text/html" title="PHP, Laravel, MySQL InitSetup on Ubuntu" />
     <published>2024-02-10T23:12:48+05:45</published>
   
     <updated>2025-01-06T22:52:19+05:45</updated>
   
-    <id>https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-laravelSetup/</id>
-    <content src="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-laravelSetup/" />
+    <id>https://aaryanpoudel.com.np/posts/init-laravelSetup/</id>
+    <content src="https://aaryanpoudel.com.np/posts/init-laravelSetup/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -187,13 +187,13 @@ sudo add-apt-reposi...
   
   <entry>
     <title>Hugo Init Setup &amp; CMD</title>
-    <link href="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-hugoSetup/" rel="alternate" type="text/html" title="Hugo Init Setup &amp;amp; CMD" />
+    <link href="https://aaryanpoudel.com.np/posts/init-hugoSetup/" rel="alternate" type="text/html" title="Hugo Init Setup &amp;amp; CMD" />
     <published>2023-11-28T02:30:53+05:45</published>
   
     <updated>2023-11-28T02:30:53+05:45</updated>
   
-    <id>https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-hugoSetup/</id>
-    <content src="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-hugoSetup/" />
+    <id>https://aaryanpoudel.com.np/posts/init-hugoSetup/</id>
+    <content src="https://aaryanpoudel.com.np/posts/init-hugoSetup/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -236,13 +236,13 @@ echo "theme = 'ananke'" &amp;gt;&amp;gt; hug...
   
   <entry>
     <title>QEMU Virtual Machine Setup</title>
-    <link href="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-qemuSetup/" rel="alternate" type="text/html" title="QEMU Virtual Machine Setup" />
+    <link href="https://aaryanpoudel.com.np/posts/init-qemuSetup/" rel="alternate" type="text/html" title="QEMU Virtual Machine Setup" />
     <published>2023-11-14T12:30:31+05:45</published>
   
     <updated>2023-11-14T12:30:31+05:45</updated>
   
-    <id>https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-qemuSetup/</id>
-    <content src="https://aaryanpoudel.com.np/https://aaryanpoudel.com.np/posts/init-qemuSetup/" />
+    <id>https://aaryanpoudel.com.np/posts/init-qemuSetup/</id>
+    <content src="https://aaryanpoudel.com.np/posts/init-qemuSetup/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>

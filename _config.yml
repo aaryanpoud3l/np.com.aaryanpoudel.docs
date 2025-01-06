@@ -116,10 +116,10 @@ assets:
 pwa:
   enabled: true # the option for PWA feature
 
-paginate: 10
+paginate: 15
 
 # The base URL of your site
-baseurl: "https://aaryanpoudel.com.np/"
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
