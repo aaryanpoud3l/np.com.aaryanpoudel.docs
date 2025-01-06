@@ -1,0 +1,33 @@
+<p>The scripts have been verified on <em>Ubuntu 22.04 LTS</em> :</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Essentials</span>
+<span class="nb">sudo </span>apt remove firefox geary gnome-weather gnome-contacts gnome-system-monitor gnome-user-docs gnome-logs<span class="p">;</span>
+<span class="nb">sudo </span>snap remove firefox<span class="p">;</span>
+<span class="nb">sudo </span>apt update <span class="nt">-y</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt upgrade <span class="nt">-y</span><span class="p">;</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>ubuntu-restricted-extras gufw htop curl wget git<span class="p">;</span>
+
+<span class="c">#Nvida Graphic Driver</span>
+apt list | <span class="nb">grep </span>nvidia<span class="p">;</span> <span class="c">#View if Installed</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>nvidia-driver-535<span class="p">;</span>
+
+<span class="c">#Must Have Pkgs</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>qbittorrent vlc cheese<span class="p">;</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>inkscape libreoffice<span class="p">;</span> <span class="c">#Productivity Suite</span>
+
+<span class="c">#Tweaks</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>chrome-gnome-shell gnome-shell-extensions gnome-tweaks<span class="p">;</span>
+gsettings <span class="nb">set </span>org.gnome.shell.window-switcher current-workspace-only <span class="nb">false</span><span class="p">;</span>
+gsettings <span class="nb">set </span>org.gnome.shell.extensions.dash-to-dock click-action <span class="s1">'minimize'</span><span class="p">;</span>
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/NoDisplay=true/NoDisplay=false/g'</span> /etc/xdg/autostart/<span class="k">*</span>.desktop<span class="p">;</span>
+
+<span class="c">#Swappiness</span>
+<span class="nb">cat</span> /proc/sys/vm/swappiness<span class="p">;</span>
+<span class="nb">sudo </span>bash <span class="nt">-c</span> <span class="s2">"echo 'vm.swappiness = 10' &gt;&gt; /etc/sysctl.conf"</span><span class="p">;</span>
+<span class="nb">sudo </span>sysctl <span class="nt">-p</span><span class="p">;</span>
+<span class="nb">cat</span> /proc/sys/vm/swappiness<span class="p">;</span>
+</code></pre></div></div>
+<p>For Lenovo laptops, save your battery health using conservation mode :</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode<span class="p">;</span>
+<span class="nb">echo </span>1 | <span class="nb">sudo tee</span> /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode<span class="p">;</span>
+</code></pre></div></div>

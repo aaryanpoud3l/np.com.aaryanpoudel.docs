@@ -1,0 +1,27 @@
+<p>Hugo is used for generating static sites using markdown. This blog has been created using Hugo.</p>
+
+<p>Get Hugo using apt on Ubuntu based distros:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>hugo<span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="commands">Commands</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Project Setup</span>
+hugo new site siteName
+<span class="nb">cd </span>siteName
+git init
+<span class="c">#Sample hugo theme add as submodule</span>
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+<span class="nb">echo</span> <span class="s2">"theme = 'ananke'"</span> <span class="o">&gt;&gt;</span> hugo.toml
+
+<span class="c">#Adding Content</span>
+hugo new content posts/postName.md
+
+<span class="c">#Serve Hugo Projects</span>
+<span class="c">#for local</span>
+hugo server
+
+<span class="c">#for production</span>
+hugo
+</code></pre></div></div>

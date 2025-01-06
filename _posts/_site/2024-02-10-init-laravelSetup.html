@@ -1,0 +1,83 @@
+<p>The scripts have been verified on <em>Ubuntu 22.04 LTS</em> :</p>
+
+<p>Apache Setup</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update <span class="nt">-y</span><span class="p">;</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt upgrade <span class="nt">-y</span><span class="p">;</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>apache2<span class="p">;</span>
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>apache2<span class="p">;</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>systemctl start apache2<span class="p">;</span>
+<span class="nb">sudo </span>systemctl status apache2<span class="p">;</span>
+</code></pre></div></div>
+
+<p>PHP Setup. Use the PPA of ondrej for installing different versions of PHP later on</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>software-properties-common<span class="p">;</span>
+<span class="nb">sudo </span>add-apt-repository ppa:ondrej/php<span class="p">;</span>
+<span class="nb">sudo </span>apt update<span class="p">;</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>php php-fpm<span class="p">;</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>php-mysql php-mbstring php-xml php-gd php-curl php-cli php-common php-imap php-redis php-snmp php-zip php-json<span class="p">;</span>
+
+<span class="c">#PHP Version Change</span>
+<span class="nb">sudo </span>update-alternatives <span class="nt">--config</span> php<span class="p">;</span>
+</code></pre></div></div>
+
+<p>Composer Setup. It’s a dependency manager for PHP</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-sS</span> https://getcomposer.org/installer | <span class="nb">sudo </span>php <span class="nt">--</span> <span class="nt">--install-dir</span><span class="o">=</span>/usr/bin <span class="nt">--filename</span><span class="o">=</span>composer<span class="p">;</span>
+composer<span class="p">;</span>
+
+<span class="c">#Laravel Project Init</span>
+composer create-project laravel/laravel projectName
+</code></pre></div></div>
+
+<p>phpMyAdmin Setup</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://files.phpmyadmin.net/phpMyAdmin/5.2.0/phpMyAdmin-5.2.0-all-languages.zip<span class="p">;</span>
+unzip phpMyAdmin-5.2.0-all-languages.zip<span class="p">;</span>
+<span class="nb">sudo mv </span>phpMyAdmin-5.2.0-all-languages /usr/share/phpmyadmin<span class="p">;</span> 
+<span class="nb">sudo mkdir</span> /usr/share/phpmyadmin/tmp<span class="p">;</span>
+<span class="nb">sudo chown</span> <span class="nt">-R</span> www-data:www-data /usr/share/phpmyadmin<span class="p">;</span>
+<span class="nb">sudo chmod </span>777 /usr/share/phpmyadmin/tmp<span class="p">;</span>
+<span class="nb">sudo </span>nano /etc/apache2/conf-available/phpmyadmin.conf<span class="p">;</span>
+</code></pre></div></div>
+<p><em>After opening the conf, paste the following:</em></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alias /phpmyadmin /usr/share/phpmyadmin
+Alias /phpMyAdmin /usr/share/phpmyadmin
+
+&lt;Directory /usr/share/phpmyadmin/&gt;
+   AddDefaultCharset UTF-8
+   &lt;IfModule mod_authz_core.c&gt;
+      &lt;RequireAny&gt;
+      Require all granted
+     &lt;/RequireAny&gt;
+   &lt;/IfModule&gt;
+&lt;/Directory&gt;
+ 
+&lt;Directory /usr/share/phpmyadmin/setup/&gt;
+   &lt;IfModule mod_authz_core.c&gt;
+     &lt;RequireAny&gt;
+       Require all granted
+     &lt;/RequireAny&gt;
+   &lt;/IfModule&gt;
+&lt;/Directory&gt;
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Enable Conf &amp; finish phpmyadmin setup</span>
+<span class="nb">sudo </span>a2enconf phpmyadmin 
+<span class="nb">sudo </span>systemctl restart apache2 
+</code></pre></div></div>
+
+<p>MySQL Setup</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>mysql-server<span class="p">;</span>
+<span class="nb">sudo </span>mysql<span class="p">;</span>
+
+<span class="c">#Inside mysql prompt setup db &amp; user</span>
+CREATE DATABASE phpmadmin<span class="p">;</span>
+CREATE USER <span class="s1">'array'</span>@<span class="s1">'localhost'</span> IDENTIFIED BY <span class="s1">'password'</span><span class="p">;</span>
+GRANT ALL ON array.<span class="k">*</span> TO <span class="s1">'array'</span>@<span class="s1">'localhost'</span><span class="p">;</span>
+FLUSH PRIVILEGES<span class="p">;</span>
+ALTER USER <span class="s1">'root'</span>@<span class="s1">'localhost'</span> IDENTIFIED WITH mysql_native_password BY <span class="s1">'password'</span><span class="p">;</span>
+FLUSH PRIVILEGES<span class="p">;</span>
+</code></pre></div></div>
+
+<p>Node Setup</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-o-</span> https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash<span class="p">;</span>
+<span class="nb">source</span> ~/.bashrc<span class="p">;</span>
+nvm <span class="nb">install </span>node<span class="p">;</span>
+node <span class="nt">--version</span><span class="p">;</span>
+</code></pre></div></div>

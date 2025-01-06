@@ -1,8 +1,25 @@
 [
   
   {
+    "title": "Jekyll Installation on Mac",
+    "url": "/https://aaryanpoudel.com.np/posts/init-jekyllSetup/",
+    "categories": "Setups",
+    "tags": "init, setup, staticsitegenerator, blog",
+    "date": "2025-01-06 23:25:50 +0545",
+    
+
+
+
+
+
+    
+    "snippet": "Jekyll is used to convert your markdown notes into a static site. This blog was created by converting my Obsidian notes written as .md and converting them to a static site using Jekyll.Setting up J...",
+    "content": "Jekyll is used to convert your markdown notes into a static site. This blog was created by converting my Obsidian notes written as .md and converting them to a static site using Jekyll.Setting up Jekyll on Mac using Homebrew:# Install chruby (Version Manager) and ruby-install (Package Manager)brew install chruby ruby-install# Check the latest Ruby Version: https://jekyllrb.com/docs/installation/macos/#:~:text=Install%20the-,latest,-stable%20version%20ofruby-install ruby 3.3.5#In ~/.zhsrc fileecho \"source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh\" &gt;&gt; ~/.zshrcecho \"source $(brew --prefix)/opt/chruby/share/chruby/auto.sh\" &gt;&gt; ~/.zshrcecho \"chruby ruby-3.3.5\" &gt;&gt; ~/.zshrc# To Verify, use ruby -v to check the running version of Ruby#Install Jekyllgem install jekyll bundlerCommands#Project Setupjekyll new siteNamecd siteNamegit init#Sample hugo theme add as submodulebundle exec jekyll serve#Adding Contentcd _posts/touch blogName.md#For Config Issuesjekyll doctor#Serve Jekyll Projects#for local http://localhost:4000bundle exec jekyll serve --livereload#for productionbundle build"
+  },
+  
+  {
     "title": "CheatSheet for Markdown",
-    "url": "/posts/tldr-markdown-cheatSheet/",
+    "url": "/https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/",
     "categories": "CheatSheets",
     "tags": "blog, cheatsheet, staticsitegenerator, tldr",
     "date": "2024-02-13 23:04:48 +0545",
@@ -19,7 +36,7 @@
   
   {
     "title": "PHP, Laravel, MySQL InitSetup on Ubuntu",
-    "url": "/posts/init-laravelSetup/",
+    "url": "/https://aaryanpoudel.com.np/posts/init-laravelSetup/",
     "categories": "Setups",
     "tags": "laravel, mySQL, ubuntu, init, setup, blog",
     "date": "2024-02-10 23:12:48 +0545",
@@ -36,7 +53,7 @@
   
   {
     "title": "Hugo Init Setup & CMD",
-    "url": "/posts/init-hugoSetup/",
+    "url": "/https://aaryanpoudel.com.np/posts/init-hugoSetup/",
     "categories": "Setups",
     "tags": "init, setup, staticsitegenerator, blog",
     "date": "2023-11-28 02:30:53 +0545",
@@ -53,7 +70,7 @@
   
   {
     "title": "QEMU Virtual Machine Setup",
-    "url": "/posts/init-qemuSetup/",
+    "url": "/https://aaryanpoudel.com.np/posts/init-qemuSetup/",
     "categories": "Setups",
     "tags": "setup, vm, init, blog",
     "date": "2023-11-14 12:30:31 +0545",
@@ -70,7 +87,7 @@
   
   {
     "title": "Virtual Machine",
-    "url": "/posts/blog-virtualmachine/",
+    "url": "/https://aaryanpoudel.com.np/posts/blog-virtualmachine/",
     "categories": "Blogs",
     "tags": "blog, vm",
     "date": "2023-11-14 11:54:24 +0545",
@@ -87,7 +104,7 @@
   
   {
     "title": "Ubuntu Initial Setup",
-    "url": "/posts/init-ubuntuSetup/",
+    "url": "/https://aaryanpoudel.com.np/posts/init-ubuntuSetup/",
     "categories": "Setups",
     "tags": "ubuntu, linux, init, setup, blog",
     "date": "2023-11-14 11:48:48 +0545",
