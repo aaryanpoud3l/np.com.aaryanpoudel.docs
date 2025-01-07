@@ -45,5 +45,5 @@ touch blogName.md
 jekyll doctor
 
 #To Build the Project for Production
-bundle build
+jekyll build
 ```

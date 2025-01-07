@@ -4,7 +4,7 @@
   <id>https://aaryanpoudel.com.np/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-01-07T00:01:23+05:45</updated>
+  <updated>2025-01-07T20:47:54+05:45</updated>
   <author>
     <name>Aaryan Poudel</name>
     <uri>https://aaryanpoudel.com.np/</uri>
@@ -20,11 +20,53 @@
 
   
   <entry>
+    <title>Init Neovimsetup</title>
+    <link href="https://aaryanpoudel.com.np/posts/init-neovimSetup/" rel="alternate" type="text/html" title="Init Neovimsetup" />
+    <published>2025-01-07T00:00:00+05:45</published>
+  
+    <updated>2025-01-07T00:00:00+05:45</updated>
+  
+    <id>https://aaryanpoudel.com.np/posts/init-neovimSetup/</id>
+    <content src="https://aaryanpoudel.com.np/posts/init-neovimSetup/" />
+    <author>
+      <name>Aaryan Poudel</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      #Neovim
+Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp;amp; quit btw.
+
+Installation on Mac
+#Using HomeBrew
+brew install neovim 
+
+#Check the Installation
+nvim -v
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Jekyll Installation on Mac</title>
     <link href="https://aaryanpoudel.com.np/posts/init-jekyllSetup/" rel="alternate" type="text/html" title="Jekyll Installation on Mac" />
     <published>2025-01-06T23:25:50+05:45</published>
   
-    <updated>2025-01-06T23:25:50+05:45</updated>
+    <updated>2025-01-07T00:02:05+05:45</updated>
   
     <id>https://aaryanpoudel.com.np/posts/init-jekyllSetup/</id>
     <content src="https://aaryanpoudel.com.np/posts/init-jekyllSetup/" />
@@ -227,47 +269,6 @@ git init
 #Sample hugo theme add as submodule
 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 echo "theme = 'ananke'" &amp;gt;&amp;gt; hug...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>QEMU Virtual Machine Setup</title>
-    <link href="https://aaryanpoudel.com.np/posts/init-qemuSetup/" rel="alternate" type="text/html" title="QEMU Virtual Machine Setup" />
-    <published>2023-11-14T12:30:31+05:45</published>
-  
-    <updated>2023-11-14T12:30:31+05:45</updated>
-  
-    <id>https://aaryanpoudel.com.np/posts/init-qemuSetup/</id>
-    <content src="https://aaryanpoudel.com.np/posts/init-qemuSetup/" />
-    <author>
-      <name>Aaryan Poudel</name>
-    </author>
-
-  
-    
-    <category term="Setups" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      QEMU is a Level 0 HyperVisor and allows for the best VM performance in linux.
-
-Installation:
-
-sudo apt update -y; sudo apt upgrade -y; sudo apt autoremove -y; sudo apt autopurge;
-sudo apt install virt-manager qemu-kvm -y;
-
-
     </summary>
   
 
