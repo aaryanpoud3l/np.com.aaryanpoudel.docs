@@ -1,19 +1,28 @@
+---
+date: 2025-01-07T20:49:53+05:45
+title: "NeoVim Init Setup"
+description : "Docs On Installing Neovim and to set up a base config"
+categories : ["Setups"]
+tags : ["init","setup","blog"]
+---
+
 # Neovim
 Neovim is a cli based text editor written in lua. It's written in lua and is based on vim.
+
 _Use :!q to quit or :wq to write & quit btw._
 
 ## Installation on Mac
-```
+```bash
 #Using HomeBrew
 brew install neovim 
 
-#Check the Installation
+#Verify the Installation
 nvim -v
 ```
 
-# Configuration
-```
-#Configure nvim using lazy.nvim
+## Configuration
+```bash
+#Setting up lazy.nvim
 mkdir ~/.config/nvim && touch ~/.config/nvim/init.lua
 echo 'require("config.lazy")' > ~/.config/nvim/init.lua
 

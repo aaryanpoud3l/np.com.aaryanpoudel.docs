@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Init Neovimsetup" />
+<meta property="og:title" content="NeoVim Init Setup" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Neovim Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw." />
-<meta property="og:description" content="Neovim Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw." />
+<meta name="description" content="Docs On Installing Neovim and to set up a base config" />
+<meta property="og:description" content="Docs On Installing Neovim and to set up a base config" />
 <link rel="canonical" href="https://aaryanpoudel.com.np/posts/init-neovimSetup/" />
 <meta property="og:url" content="https://aaryanpoudel.com.np/posts/init-neovimSetup/" />
 <meta property="og:site_name" content="Aaryan Poudel" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-01-07T00:00:00+05:45" />
+<meta property="article:published_time" content="2025-01-07T20:49:53+05:45" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Init Neovimsetup" />
+<meta property="twitter:title" content="NeoVim Init Setup" />
 <meta name="twitter:site" content="@aaryanpoud3l" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-07T00:00:00+05:45","datePublished":"2025-01-07T00:00:00+05:45","description":"Neovim Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw.","headline":"Init Neovimsetup","mainEntityOfPage":{"@type":"WebPage","@id":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"},"url":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-07T21:16:53+05:45","datePublished":"2025-01-07T20:49:53+05:45","description":"Docs On Installing Neovim and to set up a base config","headline":"NeoVim Init Setup","mainEntityOfPage":{"@type":"WebPage","@id":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"},"url":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Init Neovimsetup | Aaryan Poudel
+  <title>NeoVim Init Setup | Aaryan Poudel
   </title>
 
   <!--
@@ -478,7 +478,7 @@
         
           
             
-              <span>Init Neovimsetup</span>
+              <span>NeoVim Init Setup</span>
             
 
           
@@ -579,6 +579,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -608,7 +619,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Init Neovimsetup</h1>
+    <h1 data-toc-skip>NeoVim Init Setup</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -624,7 +635,7 @@
 
 <time
   
-  data-ts="1736187300"
+  data-ts="1736262293"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -636,6 +647,29 @@
       </span>
 
       <!-- lastmod date -->
+      
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1736263913"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Jan  7, 2025
+</time>
+
+        </span>
       
 
       
@@ -675,7 +709,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="277 words"
+  title="276 words"
 >
   <em>1 min</em> read</span>
 
@@ -687,27 +721,28 @@
 
   <div class="content">
     <h1 id="neovim">Neovim</h1>
-<p>Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim.
-<em>Use :!q to quit or :wq to write &amp; quit btw.</em></p>
+<p>Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim.</p>
+
+<p><em>Use :!q to quit or :wq to write &amp; quit btw.</em></p>
 
 <h2 id="installation-on-mac"><span class="me-2">Installation on Mac</span><a href="#installation-on-mac" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-</pre></td><td class="rouge-code"><pre>#Using HomeBrew
-brew install neovim 
+</pre></td><td class="rouge-code"><pre><span class="c">#Using HomeBrew</span>
+brew <span class="nb">install </span>neovim 
 
-#Check the Installation
-nvim -v
+<span class="c">#Verify the Installation</span>
+nvim <span class="nt">-v</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h1 id="configuration">Configuration</h1>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<h2 id="configuration"><span class="me-2">Configuration</span><a href="#configuration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -750,48 +785,48 @@ nvim -v
 40
 41
 42
-</pre></td><td class="rouge-code"><pre>#Configure nvim using lazy.nvim
-mkdir ~/.config/nvim &amp;&amp; touch ~/.config/nvim/init.lua
-echo 'require("config.lazy")' &gt; ~/.config/nvim/init.lua
+</pre></td><td class="rouge-code"><pre><span class="c">#Setting up lazy.nvim</span>
+<span class="nb">mkdir</span> ~/.config/nvim <span class="o">&amp;&amp;</span> <span class="nb">touch</span> ~/.config/nvim/init.lua
+<span class="nb">echo</span> <span class="s1">'require("config.lazy")'</span> <span class="o">&gt;</span> ~/.config/nvim/init.lua
 
-mkdir ~/.config/nvim/lua/config &amp;&amp; touch ~/.config/nvim/lua/config/lazy.lua
+<span class="nb">mkdir</span> ~/.config/nvim/lua/config <span class="o">&amp;&amp;</span> <span class="nb">touch</span> ~/.config/nvim/lua/config/lazy.lua
 
-# Paste the following to the lazy.lua file
--- Bootstrap lazy.nvim
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
-  if vim.v.shell_error ~= 0 then
-    vim.api.nvim_echo({
-      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-      { out, "WarningMsg" },
-      { "\nPress any key to exit..." },
-    }, true, {})
-    vim.fn.getchar()
-    os.exit(1)
+<span class="c"># Paste the following to the lazy.lua file</span>
+<span class="nt">--</span> Bootstrap lazy.nvim
+<span class="nb">local </span>lazypath <span class="o">=</span> vim.fn.stdpath<span class="o">(</span><span class="s2">"data"</span><span class="o">)</span> .. <span class="s2">"/lazy/lazy.nvim"</span>
+<span class="k">if </span>not <span class="o">(</span>vim.uv or vim.loop<span class="o">)</span>.fs_stat<span class="o">(</span>lazypath<span class="o">)</span> <span class="k">then
+  </span><span class="nb">local </span>lazyrepo <span class="o">=</span> <span class="s2">"https://github.com/folke/lazy.nvim.git"</span>
+  <span class="nb">local </span>out <span class="o">=</span> vim.fn.system<span class="o">({</span> <span class="s2">"git"</span>, <span class="s2">"clone"</span>, <span class="s2">"--filter=blob:none"</span>, <span class="s2">"--branch=stable"</span>, lazyrepo, lazypath <span class="o">})</span>
+  <span class="k">if </span>vim.v.shell_error ~<span class="o">=</span> 0 <span class="k">then
+    </span>vim.api.nvim_echo<span class="o">({</span>
+      <span class="o">{</span> <span class="s2">"Failed to clone lazy.nvim:</span><span class="se">\n</span><span class="s2">"</span>, <span class="s2">"ErrorMsg"</span> <span class="o">}</span>,
+      <span class="o">{</span> out, <span class="s2">"WarningMsg"</span> <span class="o">}</span>,
+      <span class="o">{</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">Press any key to exit..."</span> <span class="o">}</span>,
+    <span class="o">}</span>, <span class="nb">true</span>, <span class="o">{})</span>
+    vim.fn.getchar<span class="o">()</span>
+    os.exit<span class="o">(</span>1<span class="o">)</span>
   end
 end
-vim.opt.rtp:prepend(lazypath)
+vim.opt.rtp:prepend<span class="o">(</span>lazypath<span class="o">)</span>
 
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+<span class="nt">--</span> Make sure to setup <span class="sb">`</span>mapleader<span class="sb">`</span> and <span class="sb">`</span>maplocalleader<span class="sb">`</span> before
+<span class="nt">--</span> loading lazy.nvim so that mappings are correct.
+<span class="nt">--</span> This is also a good place to setup other settings <span class="o">(</span>vim.opt<span class="o">)</span>
+vim.g.mapleader <span class="o">=</span> <span class="s2">" "</span>
+vim.g.maplocalleader <span class="o">=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">"</span>
 
--- Setup lazy.nvim
-require("lazy").setup({
-  spec = {
-    -- import your plugins
-    { import = "plugins" },
-  },
-  -- Configure any other settings here. See the documentation for more details.
-  -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
-  -- automatically check for plugin updates
-  checker = { enabled = true },
-})
+<span class="nt">--</span> Setup lazy.nvim
+require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</span>.setup<span class="o">({</span>
+  spec <span class="o">=</span> <span class="o">{</span>
+    <span class="nt">--</span> import your plugins
+    <span class="o">{</span> import <span class="o">=</span> <span class="s2">"plugins"</span> <span class="o">}</span>,
+  <span class="o">}</span>,
+  <span class="nt">--</span> Configure any other settings here. See the documentation <span class="k">for </span>more details.
+  <span class="nt">--</span> colorscheme that will be used when installing plugins.
+  <span class="nb">install</span> <span class="o">=</span> <span class="o">{</span> colorscheme <span class="o">=</span> <span class="o">{</span> <span class="s2">"habamax"</span> <span class="o">}</span> <span class="o">}</span>,
+  <span class="nt">--</span> automatically check <span class="k">for </span>plugin updates
+  checker <span class="o">=</span> <span class="o">{</span> enabled <span class="o">=</span> <span class="nb">true</span> <span class="o">}</span>,
+<span class="o">})</span>
 </pre></td></tr></tbody></table></code></div></div>
 
   </div>
@@ -799,8 +834,34 @@ require("lazy").setup({
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/setups/">Setups</a>
+      </div>
+    
 
     <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/init/"
+            class="post-tag no-text-decoration"
+          >init</a>
+        
+          <a
+            href="/tags/setup/"
+            class="post-tag no-text-decoration"
+          >setup</a>
+        
+          <a
+            href="/tags/blog/"
+            class="post-tag no-text-decoration"
+          >blog</a>
+        
+      </div>
     
 
     <div
@@ -841,7 +902,7 @@ require("lazy").setup({
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Init%20Neovimsetup%20-%20Aaryan%20Poudel&url=https%3A%2F%2Faaryanpoudel.com.np%2Fposts%2Finit-neovimSetup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=NeoVim%20Init%20Setup%20-%20Aaryan%20Poudel&url=https%3A%2F%2Faaryanpoudel.com.np%2Fposts%2Finit-neovimSetup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
@@ -896,21 +957,14 @@ require("lazy").setup({
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/init-neovimSetup/">NeoVim Init Setup</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/init-jekyllSetup/">Jekyll Installation on Mac</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/init-neovimSetup.md/">NeoVim Init Setup</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/init-neovimSetup/">Init Neovimsetup</a>
         </li>
       
         
@@ -925,6 +979,13 @@ require("lazy").setup({
         
         <li class="text-truncate lh-lg">
           <a href="/posts/tldr-markdown-cheatSheet/">CheatSheet for Markdown</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/init-hugoSetup/">Hugo Init Setup & CMD</a>
         </li>
       
     </ul>
@@ -1375,6 +1436,93 @@ require("lazy").setup({
 
 
 
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -1384,6 +1532,142 @@ require("lazy").setup({
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/init-ubuntuSetup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1699941828"
+  data-df="ll"
+  
+>
+  Nov 14, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Ubuntu Initial Setup</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  The scripts have been verified on Ubuntu 22.04 LTS :
+
+#Essentials
+sudo apt remove firefox geary gnome-weather gnome-contacts gnome-system-monitor gnome-user-docs gnome-logs;
+sudo snap remove firefo...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/init-qemuSetup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1699944331"
+  data-df="ll"
+  
+>
+  Nov 14, 2023
+</time>
+
+              <h4 class="pt-0 my-2">QEMU Virtual Machine Setup</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  QEMU is a Level 0 HyperVisor and allows for the best VM performance in linux.
+
+Installation:
+
+sudo apt update -y; sudo apt upgrade -y; sudo apt autoremove -y; sudo apt autopurge;
+sudo apt install v...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/init-hugoSetup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1701117953"
+  data-df="ll"
+  
+>
+  Nov 28, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Hugo Init Setup & CMD</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Hugo is used for generating static sites using markdown. This blog has been created using Hugo.
+
+Get Hugo using apt on Ubuntu based distros:
+
+sudo apt install hugo;
+
+
+Commands
+
+#Project Setup
+hugo ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1405,13 +1689,9 @@ require("lazy").setup({
   
 
   
-    <a
-      href="/posts/init-neovimSetup.md/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>NeoVim Init Setup</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
