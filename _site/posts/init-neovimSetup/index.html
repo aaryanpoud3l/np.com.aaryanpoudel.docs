@@ -32,8 +32,8 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Init Neovimsetup" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="#Neovim Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw." />
-<meta property="og:description" content="#Neovim Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw." />
+<meta name="description" content="Neovim Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw." />
+<meta property="og:description" content="Neovim Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw." />
 <link rel="canonical" href="https://aaryanpoudel.com.np/posts/init-neovimSetup/" />
 <meta property="og:url" content="https://aaryanpoudel.com.np/posts/init-neovimSetup/" />
 <meta property="og:site_name" content="Aaryan Poudel" />
@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="Init Neovimsetup" />
 <meta name="twitter:site" content="@aaryanpoud3l" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-07T00:00:00+05:45","datePublished":"2025-01-07T00:00:00+05:45","description":"#Neovim Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw.","headline":"Init Neovimsetup","mainEntityOfPage":{"@type":"WebPage","@id":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"},"url":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-07T00:00:00+05:45","datePublished":"2025-01-07T00:00:00+05:45","description":"Neovim Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw.","headline":"Init Neovimsetup","mainEntityOfPage":{"@type":"WebPage","@id":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"},"url":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -675,7 +675,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="49 words"
+  title="277 words"
 >
   <em>1 min</em> read</span>
 
@@ -686,8 +686,9 @@
   </header>
 
   <div class="content">
-    <p>#Neovim
-Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw.</p>
+    <h1 id="neovim">Neovim</h1>
+<p>Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim.
+<em>Use :!q to quit or :wq to write &amp; quit btw.</em></p>
 
 <h2 id="installation-on-mac"><span class="me-2">Installation on Mac</span><a href="#installation-on-mac" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
@@ -702,6 +703,95 @@ brew install neovim
 
 #Check the Installation
 nvim -v
+</pre></td></tr></tbody></table></code></div></div>
+
+<h1 id="configuration">Configuration</h1>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre></td><td class="rouge-code"><pre>#Configure nvim using lazy.nvim
+mkdir ~/.config/nvim &amp;&amp; touch ~/.config/nvim/init.lua
+echo 'require("config.lazy")' &gt; ~/.config/nvim/init.lua
+
+mkdir ~/.config/nvim/lua/config &amp;&amp; touch ~/.config/nvim/lua/config/lazy.lua
+
+# Paste the following to the lazy.lua file
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- Make sure to setup `mapleader` and `maplocalleader` before
+-- loading lazy.nvim so that mappings are correct.
+-- This is also a good place to setup other settings (vim.opt)
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
+-- Setup lazy.nvim
+require("lazy").setup({
+  spec = {
+    -- import your plugins
+    { import = "plugins" },
+  },
+  -- Configure any other settings here. See the documentation for more details.
+  -- colorscheme that will be used when installing plugins.
+  install = { colorscheme = { "habamax" } },
+  -- automatically check for plugin updates
+  checker = { enabled = true },
+})
 </pre></td></tr></tbody></table></code></div></div>
 
   </div>
@@ -813,6 +903,13 @@ nvim -v
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/init-neovimSetup.md/">NeoVim Init Setup</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/init-neovimSetup/">Init Neovimsetup</a>
         </li>
       
@@ -828,13 +925,6 @@ nvim -v
         
         <li class="text-truncate lh-lg">
           <a href="/posts/tldr-markdown-cheatSheet/">CheatSheet for Markdown</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/init-hugoSetup/">Hugo Init Setup & CMD</a>
         </li>
       
     </ul>
@@ -1315,9 +1405,13 @@ nvim -v
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/init-neovimSetup.md/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>NeoVim Init Setup</p>
+    </a>
   
 </nav>
 

@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "NeoVim Init Setup",
+    "url": "/posts/init-neovimSetup.md/",
+    "categories": "Setups",
+    "tags": "init, setup, blog",
+    "date": "2025-01-07 20:49:53 +0545",
+    
+
+
+
+
+
+    
+    "snippet": "# NeovimNeovim is a cli based text editor written in lua. It's written in lua and is based on vim._Use :!q to quit or :wq to write & quit btw._## Installation on Mac```#Using HomeBrewbrew install n...",
+    "content": "# NeovimNeovim is a cli based text editor written in lua. It's written in lua and is based on vim._Use :!q to quit or :wq to write & quit btw._## Installation on Mac```#Using HomeBrewbrew install neovim #Check the Installationnvim -v```## Configuration```#Setting up lazy.nvimmkdir ~/.config/nvim && nano ~/.config/nvim/init.lua && echo 'require(\"config.lazy\")>~/.config/nvim/init.lua```"
+  },
+  
+  {
     "title": "Init Neovimsetup",
     "url": "/posts/init-neovimSetup/",
     "categories": "",
@@ -13,8 +30,8 @@
 
 
     
-    "snippet": "#NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovi...",
-    "content": "#NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim. Use :!q to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim #Check the Installationnvim -v"
+    "snippet": "NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim.Use :!q to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim ...",
+    "content": "NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim.Use :!q to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim #Check the Installationnvim -vConfiguration#Configure nvim using lazy.nvimmkdir ~/.config/nvim &amp;&amp; touch ~/.config/nvim/init.luaecho 'require(\"config.lazy\")' &gt; ~/.config/nvim/init.luamkdir ~/.config/nvim/lua/config &amp;&amp; touch ~/.config/nvim/lua/config/lazy.lua# Paste the following to the lazy.lua file-- Bootstrap lazy.nvimlocal lazypath = vim.fn.stdpath(\"data\") .. \"/lazy/lazy.nvim\"if not (vim.uv or vim.loop).fs_stat(lazypath) then  local lazyrepo = \"https://github.com/folke/lazy.nvim.git\"  local out = vim.fn.system({ \"git\", \"clone\", \"--filter=blob:none\", \"--branch=stable\", lazyrepo, lazypath })  if vim.v.shell_error ~= 0 then    vim.api.nvim_echo({      { \"Failed to clone lazy.nvim:\\n\", \"ErrorMsg\" },      { out, \"WarningMsg\" },      { \"\\nPress any key to exit...\" },    }, true, {})    vim.fn.getchar()    os.exit(1)  endendvim.opt.rtp:prepend(lazypath)-- Make sure to setup `mapleader` and `maplocalleader` before-- loading lazy.nvim so that mappings are correct.-- This is also a good place to setup other settings (vim.opt)vim.g.mapleader = \" \"vim.g.maplocalleader = \"\\\\\"-- Setup lazy.nvimrequire(\"lazy\").setup({  spec = {    -- import your plugins    { import = \"plugins\" },  },  -- Configure any other settings here. See the documentation for more details.  -- colorscheme that will be used when installing plugins.  install = { colorscheme = { \"habamax\" } },  -- automatically check for plugin updates  checker = { enabled = true },})"
   },
   
   {
