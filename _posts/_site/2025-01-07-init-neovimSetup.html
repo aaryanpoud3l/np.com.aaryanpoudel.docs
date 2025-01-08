@@ -1,0 +1,48 @@
+<h1 id="neovim">Neovim</h1>
+<p>Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim.</p>
+
+<p><em>Use :q! to quit or :wq to write &amp; quit btw.</em></p>
+
+<h2 id="installation-on-mac">Installation on Mac</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Using HomeBrew</span>
+brew <span class="nb">install </span>neovim 
+
+<span class="c">#Verify the Installation</span>
+nvim <span class="nt">-v</span>
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Setting up lazy.nvim</span>
+<span class="nb">mkdir</span> ~/.config/nvim <span class="o">&amp;&amp;</span> <span class="nb">touch</span> ~/.config/nvim/init.lua
+<span class="nb">echo</span> <span class="s1">'require("config.lazy")'</span> <span class="o">&gt;</span> ~/.config/nvim/init.lua
+
+<span class="nb">mkdir</span> ~/.config/nvim/lua/config <span class="o">&amp;&amp;</span> <span class="nb">touch</span> ~/.config/nvim/lua/config/lazy.lua
+
+<span class="c"># Paste the following to the lazy.lua file</span>
+<span class="nb">local </span>lazypath <span class="o">=</span> vim.fn.stdpath<span class="o">(</span><span class="s2">"data"</span><span class="o">)</span> .. <span class="s2">"/lazy/lazy.nvim"</span>
+<span class="k">if </span>not <span class="o">(</span>vim.uv or vim.loop<span class="o">)</span>.fs_stat<span class="o">(</span>lazypath<span class="o">)</span> <span class="k">then
+  </span><span class="nb">local </span>lazyrepo <span class="o">=</span> <span class="s2">"https://github.com/folke/lazy.nvim.git"</span>
+  <span class="nb">local </span>out <span class="o">=</span> vim.fn.system<span class="o">({</span> <span class="s2">"git"</span>, <span class="s2">"clone"</span>, <span class="s2">"--filter=blob:none"</span>, <span class="s2">"--branch=stable"</span>, lazyrepo, lazypath <span class="o">})</span>
+  <span class="k">if </span>vim.v.shell_error ~<span class="o">=</span> 0 <span class="k">then
+    </span>vim.api.nvim_echo<span class="o">({</span>
+      <span class="o">{</span> <span class="s2">"Failed to clone lazy.nvim:</span><span class="se">\n</span><span class="s2">"</span>, <span class="s2">"ErrorMsg"</span> <span class="o">}</span>,
+      <span class="o">{</span> out, <span class="s2">"WarningMsg"</span> <span class="o">}</span>,
+      <span class="o">{</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">Press any key to exit..."</span> <span class="o">}</span>,
+    <span class="o">}</span>, <span class="nb">true</span>, <span class="o">{})</span>
+    vim.fn.getchar<span class="o">()</span>
+    os.exit<span class="o">(</span>1<span class="o">)</span>
+  end
+end
+vim.opt.rtp:prepend<span class="o">(</span>lazypath<span class="o">)</span>
+
+vim.g.mapleader <span class="o">=</span> <span class="s2">" "</span>
+vim.g.maplocalleader <span class="o">=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">"</span>
+
+require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</span>.setup<span class="o">({</span>
+  spec <span class="o">=</span> <span class="o">{</span>
+    <span class="o">{</span> import <span class="o">=</span> <span class="s2">"plugins"</span> <span class="o">}</span>,
+  <span class="o">}</span>,
+  <span class="nb">install</span> <span class="o">=</span> <span class="o">{</span> colorscheme <span class="o">=</span> <span class="o">{</span> <span class="s2">"gruvbox"</span> <span class="o">}</span> <span class="o">}</span>,
+  checker <span class="o">=</span> <span class="o">{</span> enabled <span class="o">=</span> <span class="nb">true</span> <span class="o">}</span>,
+<span class="o">})</span>
+</code></pre></div></div>
