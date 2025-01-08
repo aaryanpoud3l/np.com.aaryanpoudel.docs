@@ -1,27 +1,39 @@
 <p>Jekyll is used to convert your markdown notes into a static site. This blog was created by converting my Obsidian notes written as .md and converting them to a static site using Jekyll.</p>
 
-<p>Setting up Jekyll on Mac:</p>
+<h2 id="setting-up-jekyll-on-mac-using-homebrew">Setting up Jekyll on Mac using Homebrew:</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>hugo<span class="p">;</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install chruby (Version Manager) and ruby-install (Package Manager)</span>
+brew <span class="nb">install </span>chruby ruby-install
+
+<span class="c"># Check the latest Ruby Version: https://jekyllrb.com/docs/installation/macos/#:~:text=Install%20the-,latest,-stable%20version%20of</span>
+ruby-install ruby 3.3.5
+
+<span class="c">#To Add to the ~/.zhsrc file . Have these declared after the homebrew path declaration</span>
+<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"source </span><span class="si">$(</span>brew <span class="nt">--prefix</span><span class="si">)</span><span class="s2">/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">"chruby ruby-3.3.5"</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="c"># To Verify, use ruby -v to check the running version of Ruby</span>
+
+<span class="c">#Install Jekyll</span>
+gem <span class="nb">install </span>jekyll bundler
 </code></pre></div></div>
-
 <h2 id="commands">Commands</h2>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Project Setup</span>
-hugo new site siteName
+jekyll new siteName
 <span class="nb">cd </span>siteName
 git init
-<span class="c">#Sample hugo theme add as submodule</span>
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
-<span class="nb">echo</span> <span class="s2">"theme = 'ananke'"</span> <span class="o">&gt;&gt;</span> hugo.toml
 
-<span class="c">#Adding Content</span>
-hugo new content posts/postName.md
+<span class="c">#Serve Project Locally On: http://localhost:4000</span>
+bundle <span class="nb">exec </span>jekyll serve <span class="nt">--livereload</span>
 
-<span class="c">#Serve Hugo Projects</span>
-<span class="c">#for local</span>
-hugo server
+<span class="c">#For Ddding Content</span>
+<span class="nb">cd </span>_posts/
+<span class="nb">touch </span>blogName.md
 
-<span class="c">#for production</span>
-hugo
+<span class="c">#For Config Issues</span>
+jekyll doctor
+
+<span class="c">#To Build the Project for Production</span>
+jekyll build
 </code></pre></div></div>

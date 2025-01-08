@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "CheatSheet for Vim Key Bindings",
+    "url": "/posts/tldr-vimKeys-cheatSheet/",
+    "categories": "CheatSheets",
+    "tags": "cheatsheet, cli, tldr",
+    "date": "2025-01-08 18:22:48 +0545",
+    
+
+
+
+
+
+    
+    "snippet": "Vim Key Bindings CheatSheetVim Modes:  Three vim modes are used for:          Normal Mode: Movement, deletion and searching      Insert Mode: Entering text directly      Visual: Manipulate text usi...",
+    "content": "Vim Key Bindings CheatSheetVim Modes:  Three vim modes are used for:          Normal Mode: Movement, deletion and searching      Insert Mode: Entering text directly      Visual: Manipulate text using selection      Movement:Basic navigationsh -&gt; leftj -&gt; downk -&gt; upl -&gt; rightgg -&gt; first line of pageG -&gt; last line of page:number -&gt; specified line numberMoving through lines$ -&gt; end of line 0 -&gt; start of lineb -&gt; previous wordw -&gt; next wordNormal ModeEditing Textx -&gt; delete characterdd -&gt; delete lineyy -&gt; copy linep -&gt; pasteu -&gt; undoctrl + r -&gt; redo/ -&gt; search forward? -&gt; search backward:s/old/new/g -&gt;replace all \"old\" with \"new\""
+  },
+  
+  {
     "title": "NeoVim Init Setup",
     "url": "/posts/init-neovimSetup/",
     "categories": "Setups",
@@ -13,15 +30,15 @@
 
 
     
-    "snippet": "NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim.Use :!q to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim ...",
-    "content": "NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim.Use :!q to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim #Verify the Installationnvim -vConfiguration#Setting up lazy.nvimmkdir ~/.config/nvim &amp;&amp; touch ~/.config/nvim/init.luaecho 'require(\"config.lazy\")' &gt; ~/.config/nvim/init.luamkdir ~/.config/nvim/lua/config &amp;&amp; touch ~/.config/nvim/lua/config/lazy.lua# Paste the following to the lazy.lua file-- Bootstrap lazy.nvimlocal lazypath = vim.fn.stdpath(\"data\") .. \"/lazy/lazy.nvim\"if not (vim.uv or vim.loop).fs_stat(lazypath) then  local lazyrepo = \"https://github.com/folke/lazy.nvim.git\"  local out = vim.fn.system({ \"git\", \"clone\", \"--filter=blob:none\", \"--branch=stable\", lazyrepo, lazypath })  if vim.v.shell_error ~= 0 then    vim.api.nvim_echo({      { \"Failed to clone lazy.nvim:\\n\", \"ErrorMsg\" },      { out, \"WarningMsg\" },      { \"\\nPress any key to exit...\" },    }, true, {})    vim.fn.getchar()    os.exit(1)  endendvim.opt.rtp:prepend(lazypath)-- Make sure to setup `mapleader` and `maplocalleader` before-- loading lazy.nvim so that mappings are correct.-- This is also a good place to setup other settings (vim.opt)vim.g.mapleader = \" \"vim.g.maplocalleader = \"\\\\\"-- Setup lazy.nvimrequire(\"lazy\").setup({  spec = {    -- import your plugins    { import = \"plugins\" },  },  -- Configure any other settings here. See the documentation for more details.  -- colorscheme that will be used when installing plugins.  install = { colorscheme = { \"habamax\" } },  -- automatically check for plugin updates  checker = { enabled = true },})"
+    "snippet": "NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim.Use :q! to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim ...",
+    "content": "NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim.Use :q! to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim #Verify the Installationnvim -vConfiguration#Setting up lazy.nvimmkdir ~/.config/nvim &amp;&amp; touch ~/.config/nvim/init.luaecho 'require(\"config.lazy\")' &gt; ~/.config/nvim/init.luamkdir ~/.config/nvim/lua/config &amp;&amp; touch ~/.config/nvim/lua/config/lazy.lua# Paste the following to the lazy.lua filelocal lazypath = vim.fn.stdpath(\"data\") .. \"/lazy/lazy.nvim\"if not (vim.uv or vim.loop).fs_stat(lazypath) then  local lazyrepo = \"https://github.com/folke/lazy.nvim.git\"  local out = vim.fn.system({ \"git\", \"clone\", \"--filter=blob:none\", \"--branch=stable\", lazyrepo, lazypath })  if vim.v.shell_error ~= 0 then    vim.api.nvim_echo({      { \"Failed to clone lazy.nvim:\\n\", \"ErrorMsg\" },      { out, \"WarningMsg\" },      { \"\\nPress any key to exit...\" },    }, true, {})    vim.fn.getchar()    os.exit(1)  endendvim.opt.rtp:prepend(lazypath)vim.g.mapleader = \" \"vim.g.maplocalleader = \"\\\\\"require(\"lazy\").setup({  spec = {    { import = \"plugins\" },  },  install = { colorscheme = { \"gruvbox\" } },  checker = { enabled = true },})"
   },
   
   {
     "title": "Jekyll Installation on Mac",
     "url": "/posts/init-jekyllSetup/",
     "categories": "Setups",
-    "tags": "init, setup, staticsitegenerator, blog",
+    "tags": "init, setup, blog",
     "date": "2025-01-06 23:25:50 +0545",
     
 
@@ -38,7 +55,7 @@
     "title": "CheatSheet for Markdown",
     "url": "/posts/tldr-markdown-cheatSheet/",
     "categories": "CheatSheets",
-    "tags": "blog, cheatsheet, staticsitegenerator, tldr",
+    "tags": "blog, cheatsheet, tldr",
     "date": "2024-02-13 23:04:48 +0545",
     
 
@@ -47,15 +64,15 @@
 
 
     
-    "snippet": "Markdown CheatSheetTypography:# H1## H2###### H6*italics* or _italics_**bold**~~strike~~Examples:H1H2H6italics or italicsboldstrikeURL &amp; Lists:[Click Me](example.com \"tooltip here\")1. Ordered I...",
-    "content": "Markdown CheatSheetTypography:# H1## H2###### H6*italics* or _italics_**bold**~~strike~~Examples:H1H2H6italics or italicsboldstrikeURL &amp; Lists:[Click Me](example.com \"tooltip here\")1. Ordered Item 11. Ordered Item 21. Ordered Item 3* Unordered Item 1  * Unordered Item 2    * Unordered Item 3Examples:Click Me  Ordered Item 1  Ordered Item 2  Ordered Item 3  unordered list item 1          unordered list item 2                              unoreded list item 3            Code Block                              ` Inline Code Block ```` Basic Code Block ``````bashecho ('Codeblock with Syntax Highlighting')Example:` Inline Code Block `Basic Code Blockecho ('Codeblock with Syntax Highlighting')Extra: Horizontal Line:  --- or ___ &gt; This is BlockquoteExample:  This is Blockquote"
+    "snippet": "Markdown CheatSheet1. Typography:# H1## H2###### H6*italics* or _italics_**bold**~~strike~~2. URL &amp; Lists:[Click Me](example.com \"tooltip here\")1. Ordered Item 11. Ordered Item 2* Unordered Ite...",
+    "content": "Markdown CheatSheet1. Typography:# H1## H2###### H6*italics* or _italics_**bold**~~strike~~2. URL &amp; Lists:[Click Me](example.com \"tooltip here\")1. Ordered Item 11. Ordered Item 2* Unordered Item 1  * Unordered Item 2List Example:Click Me  Ordered Item 1  Ordered Item 2  unordered list item 1          unordered list item 2      3. Code &amp; Syntax Highlighting` Inline Code Block ```` Basic Code Block ``````bashecho ('Codeblock with Syntax Highlighting')Codeblock Example:echo ('Inline Codeblock')echo('Basic Codeblock ')echo ('Codeblock with Syntax Highlighting')4. Table| Heading | Description | Example ||   -     |      -      |    -    || Table   | Desc        |    Eg   || Title   | Desc        |    Eg   |for alignment,| Heading | Description | Example || :---    |   :---:     |   ---:  || Left    |   Center    | Right   |Table Example:| Heading | Description | Example ||   -     |      -      |    -    || Table   | Desc        |    Eg   || Title   | Desc        |    Eg   |            Heading      Description      Example                  Left      Center      Right      5. OthersHorizontal Line:  --- or ___&gt; Blockquote hereExample:  Blockquote here"
   },
   
   {
     "title": "PHP, Laravel, MySQL InitSetup on Ubuntu",
     "url": "/posts/init-laravelSetup/",
     "categories": "Setups",
-    "tags": "laravel, mySQL, ubuntu, init, setup, blog",
+    "tags": "laravel, linux, init, setup",
     "date": "2024-02-10 23:12:48 +0545",
     
 
@@ -72,7 +89,7 @@
     "title": "Hugo Init Setup & CMD",
     "url": "/posts/init-hugoSetup/",
     "categories": "Setups",
-    "tags": "init, setup, staticsitegenerator, blog",
+    "tags": "init, setup, blog",
     "date": "2023-11-28 02:30:53 +0545",
     
 
@@ -89,7 +106,7 @@
     "title": "QEMU Virtual Machine Setup",
     "url": "/posts/init-qemuSetup/",
     "categories": "Setups",
-    "tags": "setup, vm, init, blog",
+    "tags": "setup, init",
     "date": "2023-11-14 12:30:31 +0545",
     
 
@@ -106,7 +123,7 @@
     "title": "Virtual Machine",
     "url": "/posts/blog-virtualmachine/",
     "categories": "Blogs",
-    "tags": "blog, vm",
+    "tags": "blog",
     "date": "2023-11-14 11:54:24 +0545",
     
 
@@ -123,7 +140,7 @@
     "title": "Ubuntu Initial Setup",
     "url": "/posts/init-ubuntuSetup/",
     "categories": "Setups",
-    "tags": "ubuntu, linux, init, setup, blog",
+    "tags": "linux, init, setup",
     "date": "2023-11-14 11:48:48 +0545",
     
 

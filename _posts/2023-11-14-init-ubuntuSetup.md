@@ -3,7 +3,7 @@ date : 2023-11-14T11:48:48+05:45
 title: "Ubuntu Initial Setup"
 description : "Docs On Setting Up Minimal Ubuntu After Install"
 categories: ["Setups"]
-tags : ["ubuntu","linux","init","setup","blog"]
+tags : ["linux","init","setup"]
 ---
 
 The scripts have been verified on _Ubuntu 22.04 LTS_ :

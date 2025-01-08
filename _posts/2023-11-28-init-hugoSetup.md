@@ -3,7 +3,7 @@ date: 2023-11-28T02:30:53+05:45
 title: "Hugo Init Setup & CMD"
 description : "Docs On Setting Up Hugo"
 categories : ["Setups"]
-tags : ["init","setup","staticsitegenerator","blog"]
+tags : ["init","setup","blog"]
 ---
 
 Hugo is used for generating static sites using markdown. This blog has been created using Hugo.

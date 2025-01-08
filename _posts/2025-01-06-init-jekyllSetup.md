@@ -3,7 +3,7 @@ date: 2025-01-06T23:25:50+05:45
 title: "Jekyll Installation on Mac"
 description : "Docs on Setting up Jekyll"
 categories : ["Setups"]
-tags : ["init","setup","staticsitegenerator","blog"]
+tags : ["init","setup","blog"]
 ---
 
 Jekyll is used to convert your markdown notes into a static site. This blog was created by converting my Obsidian notes written as .md and converting them to a static site using Jekyll.

@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="NeoVim Init Setup" />
 <meta name="twitter:site" content="@aaryanpoud3l" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-07T21:16:53+05:45","datePublished":"2025-01-07T20:49:53+05:45","description":"Docs On Installing Neovim and to set up a base config","headline":"NeoVim Init Setup","mainEntityOfPage":{"@type":"WebPage","@id":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"},"url":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-07T21:27:53+05:45","datePublished":"2025-01-07T20:49:53+05:45","description":"Docs On Installing Neovim and to set up a base config","headline":"NeoVim Init Setup","mainEntityOfPage":{"@type":"WebPage","@id":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"},"url":"https://aaryanpoudel.com.np/posts/init-neovimSetup/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -660,7 +660,7 @@
 
 <time
   
-  data-ts="1736263913"
+  data-ts="1736264573"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -709,7 +709,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="276 words"
+  title="201 words"
 >
   <em>1 min</em> read</span>
 
@@ -723,7 +723,7 @@
     <h1 id="neovim">Neovim</h1>
 <p>Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim.</p>
 
-<p><em>Use :!q to quit or :wq to write &amp; quit btw.</em></p>
+<p><em>Use :q! to quit or :wq to write &amp; quit btw.</em></p>
 
 <h2 id="installation-on-mac"><span class="me-2">Installation on Mac</span><a href="#installation-on-mac" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class="language-bash highlighter-rouge"><div class="code-header">
@@ -776,15 +776,6 @@ nvim <span class="nt">-v</span>
 31
 32
 33
-34
-35
-36
-37
-38
-39
-40
-41
-42
 </pre></td><td class="rouge-code"><pre><span class="c">#Setting up lazy.nvim</span>
 <span class="nb">mkdir</span> ~/.config/nvim <span class="o">&amp;&amp;</span> <span class="nb">touch</span> ~/.config/nvim/init.lua
 <span class="nb">echo</span> <span class="s1">'require("config.lazy")'</span> <span class="o">&gt;</span> ~/.config/nvim/init.lua
@@ -792,7 +783,6 @@ nvim <span class="nt">-v</span>
 <span class="nb">mkdir</span> ~/.config/nvim/lua/config <span class="o">&amp;&amp;</span> <span class="nb">touch</span> ~/.config/nvim/lua/config/lazy.lua
 
 <span class="c"># Paste the following to the lazy.lua file</span>
-<span class="nt">--</span> Bootstrap lazy.nvim
 <span class="nb">local </span>lazypath <span class="o">=</span> vim.fn.stdpath<span class="o">(</span><span class="s2">"data"</span><span class="o">)</span> .. <span class="s2">"/lazy/lazy.nvim"</span>
 <span class="k">if </span>not <span class="o">(</span>vim.uv or vim.loop<span class="o">)</span>.fs_stat<span class="o">(</span>lazypath<span class="o">)</span> <span class="k">then
   </span><span class="nb">local </span>lazyrepo <span class="o">=</span> <span class="s2">"https://github.com/folke/lazy.nvim.git"</span>
@@ -809,22 +799,14 @@ nvim <span class="nt">-v</span>
 end
 vim.opt.rtp:prepend<span class="o">(</span>lazypath<span class="o">)</span>
 
-<span class="nt">--</span> Make sure to setup <span class="sb">`</span>mapleader<span class="sb">`</span> and <span class="sb">`</span>maplocalleader<span class="sb">`</span> before
-<span class="nt">--</span> loading lazy.nvim so that mappings are correct.
-<span class="nt">--</span> This is also a good place to setup other settings <span class="o">(</span>vim.opt<span class="o">)</span>
 vim.g.mapleader <span class="o">=</span> <span class="s2">" "</span>
 vim.g.maplocalleader <span class="o">=</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">"</span>
 
-<span class="nt">--</span> Setup lazy.nvim
 require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</span>.setup<span class="o">({</span>
   spec <span class="o">=</span> <span class="o">{</span>
-    <span class="nt">--</span> import your plugins
     <span class="o">{</span> import <span class="o">=</span> <span class="s2">"plugins"</span> <span class="o">}</span>,
   <span class="o">}</span>,
-  <span class="nt">--</span> Configure any other settings here. See the documentation <span class="k">for </span>more details.
-  <span class="nt">--</span> colorscheme that will be used when installing plugins.
-  <span class="nb">install</span> <span class="o">=</span> <span class="o">{</span> colorscheme <span class="o">=</span> <span class="o">{</span> <span class="s2">"habamax"</span> <span class="o">}</span> <span class="o">}</span>,
-  <span class="nt">--</span> automatically check <span class="k">for </span>plugin updates
+  <span class="nb">install</span> <span class="o">=</span> <span class="o">{</span> colorscheme <span class="o">=</span> <span class="o">{</span> <span class="s2">"gruvbox"</span> <span class="o">}</span> <span class="o">}</span>,
   checker <span class="o">=</span> <span class="o">{</span> enabled <span class="o">=</span> <span class="nb">true</span> <span class="o">}</span>,
 <span class="o">})</span>
 </pre></td></tr></tbody></table></code></div></div>
@@ -957,6 +939,13 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/tldr-vimKeys-cheatSheet/">CheatSheet for Vim Key Bindings</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/init-neovimSetup/">NeoVim Init Setup</a>
         </li>
       
@@ -979,13 +968,6 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
         
         <li class="text-truncate lh-lg">
           <a href="/posts/tldr-markdown-cheatSheet/">CheatSheet for Markdown</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/init-hugoSetup/">Hugo Init Setup & CMD</a>
         </li>
       
     </ul>
@@ -1014,51 +996,6 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1098,10 +1035,7 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
     
     
     
-  
-    
-    
-    
+      
     
   
     
@@ -1122,112 +1056,6 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1273,6 +1101,16 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1299,7 +1137,22 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
     
   
     
@@ -1320,8 +1173,15 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
     
     
     
-      
+  
     
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1332,14 +1192,17 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
     
     
     
-      
-    
   
     
     
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -1357,34 +1220,28 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/init/">init</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/setup/">setup</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/staticsitegenerator/">staticsitegenerator</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ubuntu/">ubuntu</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/vm/">vm</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cheatsheet/">cheatsheet</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/laravel/">laravel</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">mySQL</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/tldr/">tldr</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/cli/">cli</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/laravel/">laravel</a>
       
     </div>
   </section>
@@ -1539,87 +1396,6 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/init-ubuntuSetup/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1699941828"
-  data-df="ll"
-  
->
-  Nov 14, 2023
-</time>
-
-              <h4 class="pt-0 my-2">Ubuntu Initial Setup</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  The scripts have been verified on Ubuntu 22.04 LTS :
-
-#Essentials
-sudo apt remove firefox geary gnome-weather gnome-contacts gnome-system-monitor gnome-user-docs gnome-logs;
-sudo snap remove firefo...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/init-qemuSetup/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1699944331"
-  data-df="ll"
-  
->
-  Nov 14, 2023
-</time>
-
-              <h4 class="pt-0 my-2">QEMU Virtual Machine Setup</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  QEMU is a Level 0 HyperVisor and allows for the best VM performance in linux.
-
-Installation:
-
-sudo apt update -y; sudo apt upgrade -y; sudo apt autoremove -y; sudo apt autopurge;
-sudo apt install v...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
           <a href="/posts/init-hugoSetup/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -1665,6 +1441,84 @@ hugo ...
           </a>
         </article>
       
+        <article class="col">
+          <a href="/posts/init-jekyllSetup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1736185250"
+  data-df="ll"
+  
+>
+  Jan  6, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Jekyll Installation on Mac</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Jekyll is used to convert your markdown notes into a static site. This blog was created by converting my Obsidian notes written as .md and converting them to a static site using Jekyll.
+
+Setting up...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/init-ubuntuSetup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1699941828"
+  data-df="ll"
+  
+>
+  Nov 14, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Ubuntu Initial Setup</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  The scripts have been verified on Ubuntu 22.04 LTS :
+
+#Essentials
+sudo apt remove firefox geary gnome-weather gnome-contacts gnome-system-monitor gnome-user-docs gnome-logs;
+sudo snap remove firefo...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1689,9 +1543,13 @@ hugo ...
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/tldr-vimKeys-cheatSheet/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>CheatSheet for Vim Key Bindings</p>
+    </a>
   
 </nav>
 
@@ -1761,51 +1619,6 @@ hugo ...
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1845,10 +1658,7 @@ hugo ...
     
     
     
-  
-    
-    
-    
+      
     
   
     
@@ -1869,112 +1679,6 @@ hugo ...
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2020,6 +1724,16 @@ hugo ...
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2046,7 +1760,22 @@ hugo ...
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
     
   
     
@@ -2067,8 +1796,15 @@ hugo ...
     
     
     
-      
+  
     
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -2079,14 +1815,17 @@ hugo ...
     
     
     
-      
-    
   
     
     
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -2104,34 +1843,28 @@ hugo ...
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/init/">init</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/setup/">setup</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/staticsitegenerator/">staticsitegenerator</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ubuntu/">ubuntu</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/vm/">vm</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cheatsheet/">cheatsheet</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/laravel/">laravel</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">mySQL</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/tldr/">tldr</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/cli/">cli</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/laravel/">laravel</a>
       
     </div>
   </section>

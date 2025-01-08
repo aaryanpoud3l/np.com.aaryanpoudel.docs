@@ -4,7 +4,7 @@
   <id>https://aaryanpoudel.com.np/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-01-07T21:26:38+05:45</updated>
+  <updated>2025-01-08T19:45:36+05:45</updated>
   <author>
     <name>Aaryan Poudel</name>
     <uri>https://aaryanpoudel.com.np/</uri>
@@ -20,11 +20,67 @@
 
   
   <entry>
+    <title>CheatSheet for Vim Key Bindings</title>
+    <link href="https://aaryanpoudel.com.np/posts/tldr-vimKeys-cheatSheet/" rel="alternate" type="text/html" title="CheatSheet for Vim Key Bindings" />
+    <published>2025-01-08T18:22:48+05:45</published>
+  
+    <updated>2025-01-08T18:22:48+05:45</updated>
+  
+    <id>https://aaryanpoudel.com.np/posts/tldr-vimKeys-cheatSheet/</id>
+    <content src="https://aaryanpoudel.com.np/posts/tldr-vimKeys-cheatSheet/" />
+    <author>
+      <name>Aaryan Poudel</name>
+    </author>
+
+  
+    
+    <category term="CheatSheets" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Vim Key Bindings CheatSheet
+
+Vim Modes:
+
+  Three vim modes are used for:
+    
+      Normal Mode: Movement, deletion and searching
+      Insert Mode: Entering text directly
+      Visual: Manipulate text using selection
+    
+  
+
+
+Movement:
+Basic navigations
+h -&amp;gt; left
+j -&amp;gt; down
+k -&amp;gt; up
+l -&amp;gt; right
+gg -&amp;gt; first line of page
+G -&amp;gt; last line of page
+:number -&amp;gt; specified line number
+...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>NeoVim Init Setup</title>
     <link href="https://aaryanpoudel.com.np/posts/init-neovimSetup/" rel="alternate" type="text/html" title="NeoVim Init Setup" />
     <published>2025-01-07T20:49:53+05:45</published>
   
-    <updated>2025-01-07T21:16:53+05:45</updated>
+    <updated>2025-01-07T21:27:53+05:45</updated>
   
     <id>https://aaryanpoudel.com.np/posts/init-neovimSetup/</id>
     <content src="https://aaryanpoudel.com.np/posts/init-neovimSetup/" />
@@ -49,7 +105,7 @@
       Neovim
 Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim.
 
-Use :!q to quit or :wq to write &amp;amp; quit btw.
+Use :q! to quit or :wq to write &amp;amp; quit btw.
 
 Installation on Mac
 #Using HomeBrew
@@ -139,50 +195,45 @@ brew install chruby ruby-install
 
       Markdown CheatSheet
 
-Typography:
+1. Typography:
 
 # H1
 ## H2
 ###### H6
 
 *italics* or _italics_
-
 **bold**
-
 ~~strike~~
 
-Examples:
 
-H1
-H2
-H6
+2. URL &amp;amp; Lists:
 
-italics or italics
-
-bold
-
-strike
-
-
-URL &amp;amp; Lists:
 [Click Me](example.com "tooltip here")
 
 1. Ordered Item 1
 1. Ordered Item 2
-1. Ordered Item 3
 
 * Unordered Item 1
   * Unordered Item 2
-    * Unordered Item 3
 
-Examples:
+List Example:
 
 Click Me
 
 
   Ordered Item 1
   Ordered Item 2
-  Order...
+
+
+
+  unordered list item 1
+    
+      unordered list item 2
+    
+  
+
+
+3. Code &amp;amp; Syntax Hig...
     </summary>
   
 
@@ -228,55 +279,6 @@ sudo systemctl status apache2;
 PHP Setup. Use the PPA of ondrej for installing different versions of PHP later on
 sudo apt install software-properties-common;
 sudo add-apt-reposi...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Hugo Init Setup &amp; CMD</title>
-    <link href="https://aaryanpoudel.com.np/posts/init-hugoSetup/" rel="alternate" type="text/html" title="Hugo Init Setup &amp;amp; CMD" />
-    <published>2023-11-28T02:30:53+05:45</published>
-  
-    <updated>2023-11-28T02:30:53+05:45</updated>
-  
-    <id>https://aaryanpoudel.com.np/posts/init-hugoSetup/</id>
-    <content src="https://aaryanpoudel.com.np/posts/init-hugoSetup/" />
-    <author>
-      <name>Aaryan Poudel</name>
-    </author>
-
-  
-    
-    <category term="Setups" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Hugo is used for generating static sites using markdown. This blog has been created using Hugo.
-
-Get Hugo using apt on Ubuntu based distros:
-
-sudo apt install hugo;
-
-
-Commands
-
-#Project Setup
-hugo new site siteName
-cd siteName
-git init
-#Sample hugo theme add as submodule
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
-echo "theme = 'ananke'" &amp;gt;&amp;gt; hug...
     </summary>
   
 

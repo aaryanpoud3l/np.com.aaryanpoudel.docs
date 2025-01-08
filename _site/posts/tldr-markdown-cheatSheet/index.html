@@ -579,6 +579,26 @@
 
       
     
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
       
 
       
@@ -636,16 +656,6 @@
     
 
     
-  
-
-  
-  
-
-  
-
-  
-  
-
   
 
   
@@ -753,7 +763,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="153 words"
+  title="226 words"
 >
   <em>1 min</em> read</span>
 
@@ -764,9 +774,9 @@
   </header>
 
   <div class="content">
-    <h1 id="markdown-cheatsheet">Markdown CheatSheet</h1>
+    <h2 id="markdown-cheatsheet"><span class="me-2">Markdown CheatSheet</span><a href="#markdown-cheatsheet" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="typography"><span class="me-2">Typography:</span><a href="#typography" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h4 id="1-typography"><span class="me-2">1. Typography:</span><a href="#1-typography" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
@@ -777,32 +787,17 @@
 5
 6
 7
-8
-9
 </pre></td><td class="rouge-code"><pre># H1
 ## H2
 ###### H6
 
 *italics* or _italics_
-
 **bold**
-
 ~~strike~~
 </pre></td></tr></tbody></table></code></div></div>
-<p><em>Examples:</em></p>
 
-<h1 id="h1">H1</h1>
-<h2 id="h2"><span class="me-2">H2</span><a href="#h2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<h6 id="h6">H6</h6>
+<h4 id="2-url--lists"><span class="me-2">2. URL &amp; Lists:</span><a href="#2-url--lists" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p><em>italics</em> or <em>italics</em></p>
-
-<p><strong>bold</strong></p>
-
-<p><del>strike</del></p>
-
-<hr />
-<h2 id="url--lists"><span class="me-2">URL &amp; Lists:</span><a href="#url--lists" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -812,42 +807,32 @@
 5
 6
 7
-8
-9
 </pre></td><td class="rouge-code"><pre>[Click Me](example.com "tooltip here")
 
 1. Ordered Item 1
 1. Ordered Item 2
-1. Ordered Item 3
 
 * Unordered Item 1
   * Unordered Item 2
-    * Unordered Item 3
 </pre></td></tr></tbody></table></code></div></div>
-<p><em>Examples:</em></p>
+<p><em>List Example:</em></p>
 
-<p><a href="example.com" title="tooltip here">Click Me</a></p>
+<p><a href="example.com" title="tooltip text">Click Me</a></p>
 
 <ol>
   <li>Ordered Item 1</li>
   <li>Ordered Item 2</li>
-  <li>Ordered Item 3</li>
 </ol>
 
 <ul>
   <li>unordered list item 1
     <ul>
-      <li>unordered list item 2
-        <ul>
-          <li>
-            <h2 id="unoreded-list-item-3"><span class="me-2">unoreded list item 3</span><a href="#unoreded-list-item-3" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-            <h2 id="code-block"><span class="me-2">Code Block</span><a href="#code-block" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-          </li>
-        </ul>
-      </li>
+      <li>unordered list item 2</li>
     </ul>
   </li>
 </ul>
+
+<h4 id="3-code--syntax-highlighting"><span class="me-2">3. Code &amp; Syntax Highlighting</span><a href="#3-code--syntax-highlighting" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
@@ -857,20 +842,18 @@
 4
 5
 6
-7
-</pre></td><td class="rouge-code"><pre>
-` Inline Code Block `
+</pre></td><td class="rouge-code"><pre>` Inline Code Block `
 
 ``` Basic Code Block ```
 
 ```bash
 echo ('Codeblock with Syntax Highlighting')
 </pre></td></tr></tbody></table></code></div></div>
-<p><em>Example:</em></p>
+<p><em>Codeblock Example:</em></p>
 
-<p>` Inline Code Block `</p>
+<p><code class="language-plaintext highlighter-rouge">echo ('Inline Codeblock')</code></p>
 
-<p><code class="language-plaintext highlighter-rouge">Basic Code Block</code></p>
+<p><code class="language-plaintext highlighter-rouge">echo('Basic Codeblock ')</code></p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -878,21 +861,66 @@ echo ('Codeblock with Syntax Highlighting')
 </pre></td><td class="rouge-code"><pre><span class="nb">echo</span> <span class="o">(</span><span class="s1">'Codeblock with Syntax Highlighting'</span><span class="o">)</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<hr />
-<h2 id="extra"><span class="me-2">Extra:</span><a href="#extra" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h4 id="4-table"><span class="me-2">4. Table</span><a href="#4-table" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="rouge-code"><pre> Horizontal Line:  --- or ___
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre>| Heading | Description | Example |
+|   -     |      -      |    -    |
+| Table   | Desc        |    Eg   |
+| Title   | Desc        |    Eg   |
 
- &gt; This is Blockquote
+for alignment,
+
+| Heading | Description | Example |
+| :---    |   :---:     |   ---:  |
+| Left    |   Center    | Right   |
+</pre></td></tr></tbody></table></code></div></div>
+<p><em>Table Example:</em>
+| Heading | Description | Example |
+|   -     |      -      |    -    |
+| Table   | Desc        |    Eg   |
+| Title   | Desc        |    Eg   |</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Heading</th>
+      <th style="text-align: center">Description</th>
+      <th style="text-align: right">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Left</td>
+      <td style="text-align: center">Center</td>
+      <td style="text-align: right">Right</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h4 id="5-others"><span class="me-2">5. Others</span><a href="#5-others" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>Horizontal Line:  --- or ___
+&gt; Blockquote here
 </pre></td></tr></tbody></table></code></div></div>
 <p><em>Example:</em></p>
 <blockquote>
-  <p>This is Blockquote</p>
+  <p>Blockquote here</p>
 </blockquote>
 
   </div>
@@ -921,11 +949,6 @@ echo ('Codeblock with Syntax Highlighting')
             href="/tags/cheatsheet/"
             class="post-tag no-text-decoration"
           >cheatsheet</a>
-        
-          <a
-            href="/tags/staticsitegenerator/"
-            class="post-tag no-text-decoration"
-          >staticsitegenerator</a>
         
           <a
             href="/tags/tldr/"
@@ -1028,6 +1051,13 @@ echo ('Codeblock with Syntax Highlighting')
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/tldr-vimKeys-cheatSheet/">CheatSheet for Vim Key Bindings</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/init-neovimSetup/">NeoVim Init Setup</a>
         </li>
       
@@ -1050,13 +1080,6 @@ echo ('Codeblock with Syntax Highlighting')
         
         <li class="text-truncate lh-lg">
           <a href="/posts/tldr-markdown-cheatSheet/">CheatSheet for Markdown</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/init-hugoSetup/">Hugo Init Setup & CMD</a>
         </li>
       
     </ul>
@@ -1085,51 +1108,6 @@ echo ('Codeblock with Syntax Highlighting')
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1169,10 +1147,7 @@ echo ('Codeblock with Syntax Highlighting')
     
     
     
-  
-    
-    
-    
+      
     
   
     
@@ -1193,112 +1168,6 @@ echo ('Codeblock with Syntax Highlighting')
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1344,6 +1213,16 @@ echo ('Codeblock with Syntax Highlighting')
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1370,7 +1249,22 @@ echo ('Codeblock with Syntax Highlighting')
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
     
   
     
@@ -1391,8 +1285,15 @@ echo ('Codeblock with Syntax Highlighting')
     
     
     
-      
+  
     
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1403,14 +1304,17 @@ echo ('Codeblock with Syntax Highlighting')
     
     
     
-      
-    
   
     
     
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -1428,34 +1332,28 @@ echo ('Codeblock with Syntax Highlighting')
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/init/">init</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/setup/">setup</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/staticsitegenerator/">staticsitegenerator</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ubuntu/">ubuntu</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/vm/">vm</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cheatsheet/">cheatsheet</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/laravel/">laravel</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">mySQL</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/tldr/">tldr</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/cli/">cli</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/laravel/">laravel</a>
       
     </div>
   </section>
@@ -1510,43 +1408,19 @@ echo ('Codeblock with Syntax Highlighting')
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -1610,6 +1484,89 @@ echo ('Codeblock with Syntax Highlighting')
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
+          <a href="/posts/tldr-vimKeys-cheatSheet/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1736339868"
+  data-df="ll"
+  
+>
+  Jan  8, 2025
+</time>
+
+              <h4 class="pt-0 my-2">CheatSheet for Vim Key Bindings</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Vim Key Bindings CheatSheet
+
+Vim Modes:
+
+  Three vim modes are used for:
+    
+      Normal Mode: Movement, deletion and searching
+      Insert Mode: Entering text directly
+      Visual: Manipulate ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/blog-virtualmachine/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1699942164"
+  data-df="ll"
+  
+>
+  Nov 14, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Virtual Machine</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Virtual Machine is an OS running over a base OS allowing users to run different operating systems on a single instance
+
+Hypervisors are the VM monitors used for making virtualization possible.
+It’s...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
           <a href="/posts/init-hugoSetup/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -1649,84 +1606,6 @@ Commands
 
 #Project Setup
 hugo ...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/init-jekyllSetup/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1736185250"
-  data-df="ll"
-  
->
-  Jan  6, 2025
-</time>
-
-              <h4 class="pt-0 my-2">Jekyll Installation on Mac</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  Jekyll is used to convert your markdown notes into a static site. This blog was created by converting my Obsidian notes written as .md and converting them to a static site using Jekyll.
-
-Setting up...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/init-ubuntuSetup/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1699941828"
-  data-df="ll"
-  
->
-  Nov 14, 2023
-</time>
-
-              <h4 class="pt-0 my-2">Ubuntu Initial Setup</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  The scripts have been verified on Ubuntu 22.04 LTS :
-
-#Essentials
-sudo apt remove firefox geary gnome-weather gnome-contacts gnome-system-monitor gnome-user-docs gnome-logs;
-sudo snap remove firefo...
                 </p>
               </div>
             </div>
@@ -1833,51 +1712,6 @@ sudo snap remove firefo...
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1917,10 +1751,7 @@ sudo snap remove firefo...
     
     
     
-  
-    
-    
-    
+      
     
   
     
@@ -1941,112 +1772,6 @@ sudo snap remove firefo...
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2092,6 +1817,16 @@ sudo snap remove firefo...
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2118,7 +1853,22 @@ sudo snap remove firefo...
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
     
   
     
@@ -2139,8 +1889,15 @@ sudo snap remove firefo...
     
     
     
-      
+  
     
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -2151,14 +1908,17 @@ sudo snap remove firefo...
     
     
     
-      
-    
   
     
     
     
     
       
+    
+  
+    
+    
+    
     
   
     
@@ -2176,34 +1936,28 @@ sudo snap remove firefo...
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/init/">init</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/setup/">setup</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/staticsitegenerator/">staticsitegenerator</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ubuntu/">ubuntu</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/vm/">vm</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cheatsheet/">cheatsheet</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/laravel/">laravel</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">mySQL</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/tldr/">tldr</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/cli/">cli</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/laravel/">laravel</a>
       
     </div>
   </section>

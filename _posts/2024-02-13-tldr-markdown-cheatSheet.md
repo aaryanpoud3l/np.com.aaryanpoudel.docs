@@ -3,11 +3,11 @@ date: 2024-02-13T23:04:48+05:45
 title: "CheatSheet for Markdown"
 description : "Cheatsheet for Markdown Containing Examples"
 categories : ["CheatSheets"]
-tags : ["blog","cheatsheet","staticsitegenerator",'tldr']
+tags : ["blog","cheatsheet",'tldr']
 ---
-# Markdown CheatSheet
+## Markdown CheatSheet
 
-## Typography:
+#### 1. Typography:
 
 ``` 
 # H1
@@ -15,52 +15,34 @@ tags : ["blog","cheatsheet","staticsitegenerator",'tldr']
 ###### H6
 
 *italics* or _italics_
-
 **bold**
-
 ~~strike~~
- ```
-*Examples:*
+```
 
-# H1
-## H2
-###### H6
+#### 2. URL & Lists:
 
-*italics* or _italics_
-
-**bold**
-
-~~strike~~
-
----
-## URL & Lists:
 ```
 [Click Me](example.com "tooltip here")
 
 1. Ordered Item 1
 1. Ordered Item 2
-1. Ordered Item 3
 
 * Unordered Item 1
   * Unordered Item 2
-    * Unordered Item 3
 ```
-*Examples:*
+*List Example:* 
 
-[Click Me](example.com "tooltip here")
+[Click Me](example.com "tooltip text")
 
 1. Ordered Item 1
 1. Ordered Item 2
-1. Ordered Item 3
 
 * unordered list item 1
   * unordered list item 2
-    * unoreded list item 3
----
-## Code Block
+
+#### 3. Code & Syntax Highlighting
 
 ```
-
 ` Inline Code Block `
 
 ``` Basic Code Block ```
@@ -68,23 +50,45 @@ tags : ["blog","cheatsheet","staticsitegenerator",'tldr']
 ```bash
 echo ('Codeblock with Syntax Highlighting')
 ```
-*Example:*
+*Codeblock Example:*
 
-` Inline Code Block `
+`echo ('Inline Codeblock')`
 
-``` Basic Code Block ```
+``` echo('Basic Codeblock ') ```
 
 ```bash
 echo ('Codeblock with Syntax Highlighting')
 ```
 
----
-## Extra:
+#### 4. Table
 
 ```
- Horizontal Line:  --- or ___
+| Heading | Description | Example |
+|   -     |      -      |    -    |
+| Table   | Desc        |    Eg   |
+| Title   | Desc        |    Eg   |
 
- > This is Blockquote
+for alignment,
+
+| Heading | Description | Example |
+| :---    |   :---:     |   ---:  |
+| Left    |   Center    | Right   |
+```
+*Table Example:*
+| Heading | Description | Example |
+|   -     |      -      |    -    |
+| Table   | Desc        |    Eg   |
+| Title   | Desc        |    Eg   |
+
+| Heading | Description | Example |
+| :---    |   :---:     |   ---:  |
+| Left    | Center      | Right   |
+
+#### 5. Others
+
+```
+Horizontal Line:  --- or ___
+> Blockquote here
 ```
 *Example:*
- > This is Blockquote
+> Blockquote here

@@ -3,7 +3,7 @@ date: 2024-02-10T23:12:48+05:45
 title: "PHP, Laravel, MySQL InitSetup on Ubuntu"
 description : "Docs On Setting Up PHP, Laravel & MySQl on Ubuntu"
 categories : ["Setups"]
-tags : ["laravel","mySQL","ubuntu","init","setup","blog"]
+tags : ["laravel","linux","init","setup"]
 ---
 
 The scripts have been verified on _Ubuntu 22.04 LTS_ :

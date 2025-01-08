@@ -2,7 +2,7 @@
 title: "Virtual Machine"
 date: 2023-11-14T11:54:24+05:45
 categories: ['Blogs']
-tags: ["blog","vm"] 
+tags: ["blog"] 
 ---
 
 Virtual Machine is an OS running over a base OS allowing users to run different operating systems on a single instance
