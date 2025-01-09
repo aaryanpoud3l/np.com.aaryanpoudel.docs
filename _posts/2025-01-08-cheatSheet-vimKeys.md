@@ -8,10 +8,10 @@ tags : ["cheatsheet",'cli','tldr']
 # Vim Key Bindings CheatSheet
 
 ## Vim Modes:
-- There are three modes. It's used for the following:
+There are three modes. It's used for the following:
 1. Normal Mode: Movement, deletion and searching
 2. Insert Mode: Entering text directly
-3. Visual: Manipulate text using selection
+3. Visual: Manipulating text using selection
 
 ## Movement:
 ### 1. Basic navigations

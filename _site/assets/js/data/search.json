@@ -13,8 +13,8 @@
 
 
     
-    "snippet": "Vim Key Bindings CheatSheetVim Modes:  There are three modes. It’s used for the following:          Normal Mode: Movement, deletion and searching      Insert Mode: Entering text directly      Visua...",
-    "content": "Vim Key Bindings CheatSheetVim Modes:  There are three modes. It’s used for the following:          Normal Mode: Movement, deletion and searching      Insert Mode: Entering text directly      Visual: Manipulate text using selection      Movement:1. Basic navigationsh -&gt; leftj -&gt; downk -&gt; upl -&gt; rightgg -&gt; first line of pageG -&gt; last line of page:number -&gt; specified line number2. Moving through lines$ -&gt; end of line 0 -&gt; start of lineb -&gt; previous wordw -&gt; next wordNormal Mode3. Editing Textx -&gt; delete characterdd -&gt; delete lineyy -&gt; copy linep -&gt; pasteu -&gt; undoctrl + r -&gt; redo/ -&gt; search forward? -&gt; search backward:s/old/new/g -&gt;replace all \"old\" with \"new\""
+    "snippet": "Vim Key Bindings CheatSheetVim Modes:There are three modes. It’s used for the following:  Normal Mode: Movement, deletion and searching  Insert Mode: Entering text directly  Visual: Manipulating te...",
+    "content": "Vim Key Bindings CheatSheetVim Modes:There are three modes. It’s used for the following:  Normal Mode: Movement, deletion and searching  Insert Mode: Entering text directly  Visual: Manipulating text using selectionMovement:1. Basic navigationsh -&gt; leftj -&gt; downk -&gt; upl -&gt; rightgg -&gt; first line of pageG -&gt; last line of page:number -&gt; specified line number2. Moving through lines$ -&gt; end of line 0 -&gt; start of lineb -&gt; previous wordw -&gt; next wordNormal Mode3. Editing Textx -&gt; delete characterdd -&gt; delete lineyy -&gt; copy linep -&gt; pasteu -&gt; undoctrl + r -&gt; redo/ -&gt; search forward? -&gt; search backward:s/old/new/g -&gt;replace all \"old\" with \"new\""
   },
   
   {
