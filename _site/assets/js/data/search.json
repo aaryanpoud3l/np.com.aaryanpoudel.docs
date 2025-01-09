@@ -1,6 +1,57 @@
 [
   
   {
+    "title": "Git",
+    "url": "/posts/cheatSheet-git/",
+    "categories": "Cheatsheets",
+    "tags": "tldr,blog,cheatsheet,cli",
+    "date": "2025-01-09 18:07:24 +0545",
+    
+
+
+
+
+
+    
+    "snippet": "GitGit is an opensource version control system used to track changes in files. It’s a powerful tool allowing multiple developers to work efficiently on a single code-base.Cheatsheetgit initgit add ...",
+    "content": "GitGit is an opensource version control system used to track changes in files. It’s a powerful tool allowing multiple developers to work efficiently on a single code-base.Cheatsheetgit initgit add .git pullgit pushgit clone https://git@repositoryUrlgit commit -m \"my first commit\"git branch branchNamegit checkout branchName"
+  },
+  
+  {
+    "title": "Symbolic Link / Symlink",
+    "url": "/posts/tldr-symlink/",
+    "categories": "TLDR",
+    "tags": "tldr,blog",
+    "date": "2025-01-09 17:52:24 +0545",
+    
+
+
+
+
+
+    
+    "snippet": "Symlink:Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directo...",
+    "content": "Symlink:Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory. The source file/dir is called a target.#createln -s ~/path/to/target ~/symlinkFile#deleterm -rf ~/path/to/target ~/symlinkFile"
+  },
+  
+  {
+    "title": "Dotfiles & Config Setup using Git",
+    "url": "/posts/init-dotfilesSetup/",
+    "categories": "Setups",
+    "tags": "init, setup, cli",
+    "date": "2025-01-09 17:36:48 +0545",
+    
+
+
+
+
+
+    
+    "snippet": "DotfilesDotfiles are files that’s used by applications or packages for storing it’s configurations. It’s called a dot file as it’s naming starts with a dot &gt; .Common dotfiles include .zshrc .bas...",
+    "content": "DotfilesDotfiles are files that’s used by applications or packages for storing it’s configurations. It’s called a dot file as it’s naming starts with a dot &gt; .Common dotfiles include .zshrc .bashrc .gitignore and are mostly stored in your home under .config directory.In this guide, I’ll list out the steps that I found to be the most way of storing, backing up the .dotfiles . The easiest and most efficient way of storing dot files are by using symlinks. It avoids duplication and allows you to use git to track and version changes, acting as a backup in case some configs go haywire with a single command.Managing .dotfiles using symlinkseg: managing the .zshrcmkdir ~/.dotfiles/zsh/mv ~/.zshrc ~/.dotfiles/zsh/ln -s ~/.dotfiles/zsh ~/.zshrccd ~/.dotfiles ; git init"
+  },
+  
+  {
     "title": "CheatSheet for Vim Key Bindings",
     "url": "/posts/cheatSheet-vimKeys/",
     "categories": "CheatSheets",
