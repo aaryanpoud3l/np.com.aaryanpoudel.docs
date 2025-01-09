@@ -66,7 +66,6 @@ echo ('Codeblock with Syntax Highlighting')
 | Heading | Description | Example |
 |   -     |      -      |    -    |
 | Table   | Desc        |    Eg   |
-| Title   | Desc        |    Eg   |
 
 for alignment,
 
@@ -75,10 +74,10 @@ for alignment,
 | Left    |   Center    | Right   |
 ```
 *Table Example:*
+
 | Heading | Description | Example |
 |   -     |      -      |    -    |
 | Table   | Desc        |    Eg   |
-| Title   | Desc        |    Eg   |
 
 | Heading | Description | Example |
 | :---    |   :---:     |   ---:  |

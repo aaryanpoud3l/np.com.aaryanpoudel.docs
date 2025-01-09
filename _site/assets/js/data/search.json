@@ -2,7 +2,7 @@
   
   {
     "title": "CheatSheet for Vim Key Bindings",
-    "url": "/posts/tldr-vimKeys-cheatSheet/",
+    "url": "/posts/cheatSheet-vimKeys/",
     "categories": "CheatSheets",
     "tags": "cheatsheet, cli, tldr",
     "date": "2025-01-08 18:22:48 +0545",
@@ -18,10 +18,10 @@
   },
   
   {
-    "title": "NeoVim Init Setup",
+    "title": "Neovim Init Setup",
     "url": "/posts/init-neovimSetup/",
     "categories": "Setups",
-    "tags": "init, setup, blog",
+    "tags": "init, setup, blog, cli",
     "date": "2025-01-07 20:49:53 +0545",
     
 
@@ -31,7 +31,7 @@
 
     
     "snippet": "NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim.Use :q! to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim ...",
-    "content": "NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim.Use :q! to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim #Verify the Installationnvim -vConfiguration#Setting up lazy.nvimmkdir ~/.config/nvim &amp;&amp; touch ~/.config/nvim/init.luaecho 'require(\"config.lazy\")' &gt; ~/.config/nvim/init.luamkdir ~/.config/nvim/lua/config &amp;&amp; touch ~/.config/nvim/lua/config/lazy.lua# Paste the following to the lazy.lua filelocal lazypath = vim.fn.stdpath(\"data\") .. \"/lazy/lazy.nvim\"if not (vim.uv or vim.loop).fs_stat(lazypath) then  local lazyrepo = \"https://github.com/folke/lazy.nvim.git\"  local out = vim.fn.system({ \"git\", \"clone\", \"--filter=blob:none\", \"--branch=stable\", lazyrepo, lazypath })  if vim.v.shell_error ~= 0 then    vim.api.nvim_echo({      { \"Failed to clone lazy.nvim:\\n\", \"ErrorMsg\" },      { out, \"WarningMsg\" },      { \"\\nPress any key to exit...\" },    }, true, {})    vim.fn.getchar()    os.exit(1)  endendvim.opt.rtp:prepend(lazypath)vim.g.mapleader = \" \"vim.g.maplocalleader = \"\\\\\"require(\"lazy\").setup({  spec = {    { import = \"plugins\" },  },  install = { colorscheme = { \"gruvbox\" } },  checker = { enabled = true },})"
+    "content": "NeovimNeovim is a cli based text editor written in lua. It’s written in lua and is based on vim.Use :q! to quit or :wq to write &amp; quit btw.Installation on Mac#Using HomeBrewbrew install neovim #Verify the Installationnvim -vConfiguring Package Manager#Setting up lazy.nvimmkdir ~/.config/nvim &amp;&amp; touch ~/.config/nvim/init.luaecho 'require(\"config.lazy\")' &gt;&gt; ~/.config/nvim/init.luamkdir ~/.config/nvim/lua/config &amp;&amp; touch ~/.config/nvim/lua/config/lazy.lua# Paste the following to the lazy.lua filelocal lazypath = vim.fn.stdpath(\"data\") .. \"/lazy/lazy.nvim\"if not (vim.uv or vim.loop).fs_stat(lazypath) then  local lazyrepo = \"https://github.com/folke/lazy.nvim.git\"  local out = vim.fn.system({ \"git\", \"clone\", \"--filter=blob:none\", \"--branch=stable\", lazyrepo, lazypath })  if vim.v.shell_error ~= 0 then    vim.api.nvim_echo({      { \"Failed to clone lazy.nvim:\\n\", \"ErrorMsg\" },      { out, \"WarningMsg\" },      { \"\\nPress any key to exit...\" },    }, true, {})    vim.fn.getchar()    os.exit(1)  endendvim.opt.rtp:prepend(lazypath)vim.g.mapleader = \" \"vim.g.maplocalleader = \"\\\\\"require(\"lazy\").setup({  spec = {    { import = \"plugins\" },  },  install = { colorscheme = { \"gruvbox\" } },  checker = { enabled = true },})"
   },
   
   {
@@ -53,7 +53,7 @@
   
   {
     "title": "CheatSheet for Markdown",
-    "url": "/posts/tldr-markdown-cheatSheet/",
+    "url": "/posts/cheatSheet-markdown/",
     "categories": "CheatSheets",
     "tags": "blog, cheatsheet, tldr",
     "date": "2024-02-13 23:04:48 +0545",
@@ -65,7 +65,7 @@
 
     
     "snippet": "Markdown CheatSheet1. Typography:# H1## H2###### H6*italics* or _italics_**bold**~~strike~~2. URL &amp; Lists:[Click Me](example.com \"tooltip here\")1. Ordered Item 11. Ordered Item 2* Unordered Ite...",
-    "content": "Markdown CheatSheet1. Typography:# H1## H2###### H6*italics* or _italics_**bold**~~strike~~2. URL &amp; Lists:[Click Me](example.com \"tooltip here\")1. Ordered Item 11. Ordered Item 2* Unordered Item 1  * Unordered Item 2List Example:Click Me  Ordered Item 1  Ordered Item 2  unordered list item 1          unordered list item 2      3. Code &amp; Syntax Highlighting` Inline Code Block ```` Basic Code Block ``````bashecho ('Codeblock with Syntax Highlighting')Codeblock Example:echo ('Inline Codeblock')echo('Basic Codeblock ')echo ('Codeblock with Syntax Highlighting')4. Table| Heading | Description | Example ||   -     |      -      |    -    || Table   | Desc        |    Eg   || Title   | Desc        |    Eg   |for alignment,| Heading | Description | Example || :---    |   :---:     |   ---:  || Left    |   Center    | Right   |Table Example:| Heading | Description | Example ||   -     |      -      |    -    || Table   | Desc        |    Eg   || Title   | Desc        |    Eg   |            Heading      Description      Example                  Left      Center      Right      5. OthersHorizontal Line:  --- or ___&gt; Blockquote hereExample:  Blockquote here"
+    "content": "Markdown CheatSheet1. Typography:# H1## H2###### H6*italics* or _italics_**bold**~~strike~~2. URL &amp; Lists:[Click Me](example.com \"tooltip here\")1. Ordered Item 11. Ordered Item 2* Unordered Item 1  * Unordered Item 2List Example:Click Me  Ordered Item 1  Ordered Item 2  unordered list item 1          unordered list item 2      3. Code &amp; Syntax Highlighting` Inline Code Block ```` Basic Code Block ``````bashecho ('Codeblock with Syntax Highlighting')Codeblock Example:echo ('Inline Codeblock')echo('Basic Codeblock ')echo ('Codeblock with Syntax Highlighting')4. Table| Heading | Description | Example ||   -     |      -      |    -    || Table   | Desc        |    Eg   |for alignment,| Heading | Description | Example || :---    |   :---:     |   ---:  || Left    |   Center    | Right   |Table Example:            Heading      Description      Example                  Table      Desc      Eg                  Heading      Description      Example                  Left      Center      Right      5. OthersHorizontal Line:  --- or ___&gt; Blockquote hereExample:  Blockquote here"
   },
   
   {

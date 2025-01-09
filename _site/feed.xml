@@ -4,7 +4,7 @@
   <id>https://aaryanpoudel.com.np/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-01-08T19:45:36+05:45</updated>
+  <updated>2025-01-09T12:27:16+05:45</updated>
   <author>
     <name>Aaryan Poudel</name>
     <uri>https://aaryanpoudel.com.np/</uri>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>CheatSheet for Vim Key Bindings</title>
-    <link href="https://aaryanpoudel.com.np/posts/tldr-vimKeys-cheatSheet/" rel="alternate" type="text/html" title="CheatSheet for Vim Key Bindings" />
+    <link href="https://aaryanpoudel.com.np/posts/cheatSheet-vimKeys/" rel="alternate" type="text/html" title="CheatSheet for Vim Key Bindings" />
     <published>2025-01-08T18:22:48+05:45</published>
   
     <updated>2025-01-08T18:22:48+05:45</updated>
   
-    <id>https://aaryanpoudel.com.np/posts/tldr-vimKeys-cheatSheet/</id>
-    <content src="https://aaryanpoudel.com.np/posts/tldr-vimKeys-cheatSheet/" />
+    <id>https://aaryanpoudel.com.np/posts/cheatSheet-vimKeys/</id>
+    <content src="https://aaryanpoudel.com.np/posts/cheatSheet-vimKeys/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -76,11 +76,11 @@ G -&amp;gt; last line of page
 
   
   <entry>
-    <title>NeoVim Init Setup</title>
-    <link href="https://aaryanpoudel.com.np/posts/init-neovimSetup/" rel="alternate" type="text/html" title="NeoVim Init Setup" />
+    <title>Neovim Init Setup</title>
+    <link href="https://aaryanpoudel.com.np/posts/init-neovimSetup/" rel="alternate" type="text/html" title="Neovim Init Setup" />
     <published>2025-01-07T20:49:53+05:45</published>
   
-    <updated>2025-01-07T21:27:53+05:45</updated>
+    <updated>2025-01-08T19:46:01+05:45</updated>
   
     <id>https://aaryanpoudel.com.np/posts/init-neovimSetup/</id>
     <content src="https://aaryanpoudel.com.np/posts/init-neovimSetup/" />
@@ -115,10 +115,10 @@ brew install neovim
 nvim -v
 
 
-Configuration
+Configuring Package Manager
 #Setting up lazy.nvim
 mkdir ~/.config/nvim &amp;amp;&amp;amp; touch ~/.config/nvim/init.lua
-echo 'require("config.lazy")' &amp;gt; ~/.config/nvim/init.lua...
+echo 'require("config.lazy")' &amp;gt;&amp;gt; ~/.co...
     </summary>
   
 
@@ -130,7 +130,7 @@ echo 'require("config.lazy")' &amp;gt; ~/.config/nvim/init.lua...
     <link href="https://aaryanpoudel.com.np/posts/init-jekyllSetup/" rel="alternate" type="text/html" title="Jekyll Installation on Mac" />
     <published>2025-01-06T23:25:50+05:45</published>
   
-    <updated>2025-01-07T20:53:43+05:45</updated>
+    <updated>2025-01-08T19:46:01+05:45</updated>
   
     <id>https://aaryanpoudel.com.np/posts/init-jekyllSetup/</id>
     <content src="https://aaryanpoudel.com.np/posts/init-jekyllSetup/" />
@@ -168,13 +168,13 @@ brew install chruby ruby-install
   
   <entry>
     <title>CheatSheet for Markdown</title>
-    <link href="https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/" rel="alternate" type="text/html" title="CheatSheet for Markdown" />
+    <link href="https://aaryanpoudel.com.np/posts/cheatSheet-markdown/" rel="alternate" type="text/html" title="CheatSheet for Markdown" />
     <published>2024-02-13T23:04:48+05:45</published>
   
-    <updated>2025-01-06T22:52:19+05:45</updated>
+    <updated>2024-02-13T23:04:48+05:45</updated>
   
-    <id>https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/</id>
-    <content src="https://aaryanpoudel.com.np/posts/tldr-markdown-cheatSheet/" />
+    <id>https://aaryanpoudel.com.np/posts/cheatSheet-markdown/</id>
+    <content src="https://aaryanpoudel.com.np/posts/cheatSheet-markdown/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -245,7 +245,7 @@ Click Me
     <link href="https://aaryanpoudel.com.np/posts/init-laravelSetup/" rel="alternate" type="text/html" title="PHP, Laravel, MySQL InitSetup on Ubuntu" />
     <published>2024-02-10T23:12:48+05:45</published>
   
-    <updated>2025-01-06T22:52:19+05:45</updated>
+    <updated>2025-01-08T19:46:01+05:45</updated>
   
     <id>https://aaryanpoudel.com.np/posts/init-laravelSetup/</id>
     <content src="https://aaryanpoudel.com.np/posts/init-laravelSetup/" />

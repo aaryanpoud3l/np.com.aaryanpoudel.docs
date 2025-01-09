@@ -1,9 +1,9 @@
 ---
 date: 2025-01-07T20:49:53+05:45
-title: "NeoVim Init Setup"
+title: "Neovim Init Setup"
 description : "Docs On Installing Neovim and to set up a base config"
 categories : ["Setups"]
-tags : ["init","setup","blog"]
+tags : ["init","setup","blog","cli"]
 ---
 
 # Neovim
@@ -20,11 +20,11 @@ brew install neovim
 nvim -v
 ```
 
-## Configuration
+## Configuring Package Manager
 ```bash
 #Setting up lazy.nvim
 mkdir ~/.config/nvim && touch ~/.config/nvim/init.lua
-echo 'require("config.lazy")' > ~/.config/nvim/init.lua
+echo 'require("config.lazy")' >> ~/.config/nvim/init.lua
 
 mkdir ~/.config/nvim/lua/config && touch ~/.config/nvim/lua/config/lazy.lua
 
