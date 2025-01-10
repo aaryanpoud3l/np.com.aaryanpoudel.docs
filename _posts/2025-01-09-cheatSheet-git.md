@@ -1,5 +1,5 @@
 ---
-title: "Git"
+title: "Git & GitHub SSH Setup"
 date: 2025-01-09T18:07:24+05:45
 categories: ['Cheatsheets']
 tags: ["tldr,blog,cheatsheet,cli"]
@@ -29,7 +29,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 eval "$(ssh-agent -s)"
 
 #Paste the following in config
-touch ~/.ssh/config
+#touch ~/.ssh/config
 #Host github.com
 #  AddKeysToAgent yes
 #  UseKeychain yes
