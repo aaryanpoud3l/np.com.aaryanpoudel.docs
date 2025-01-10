@@ -14,5 +14,5 @@ Symlink is a type of file that's used to point to another file/directory. It con
 ln -s ~/path/to/target ~/symlinkFile
 
 #delete
-rm -rf ~/path/to/target ~/symlinkFile
+rm -rf ~/symlinkFile
 ```

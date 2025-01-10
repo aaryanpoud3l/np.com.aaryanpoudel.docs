@@ -4,7 +4,7 @@
   <id>https://aaryanpoudel.com.np/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-01-09T18:29:12+05:45</updated>
+  <updated>2025-01-10T11:40:29+05:45</updated>
   <author>
     <name>Aaryan Poudel</name>
     <uri>https://aaryanpoudel.com.np/</uri>
@@ -60,7 +60,8 @@ git commit -m "my first commit"
 git branch branchName
 git checkout branchName
 
-
+GitHub SSH Setup
+It’s a dev platform utilizing git for dist...
     </summary>
   
 
@@ -102,7 +103,7 @@ Symlink is a type of file that’s used to point to another file/directory. It c
 ln -s ~/path/to/target ~/symlinkFile
 
 #delete
-rm -rf ~/path/to/target ~/symlinkFile
+rm -rf ~/symlinkFile
 
 
     </summary>

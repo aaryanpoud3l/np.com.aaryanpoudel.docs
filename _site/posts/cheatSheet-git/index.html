@@ -584,6 +584,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -675,7 +686,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="62 words"
+  title="176 words"
 >
   <em>1 min</em> read</span>
 
@@ -711,6 +722,40 @@ git commit <span class="nt">-m</span> <span class="s2">"my first commit"</span>
 git branch branchName
 git checkout branchName
 </pre></td></tr></tbody></table></code></div></div>
+<h3 id="github-ssh-setup"><span class="me-2">GitHub SSH Setup</span><a href="#github-ssh-setup" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>It’s a dev platform utilizing git for distributed version control. The best way to use github is by setting it up via ssh.</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="c">#If no password is needed, press enter on prompts</span>
+<span class="nb">ls</span> <span class="nt">-al</span> ~/.ssh
+ssh-keygen <span class="nt">-t</span> ed25519 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+<span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>ssh-agent <span class="nt">-s</span><span class="si">)</span><span class="s2">"</span>
+
+<span class="c">#Paste the following in config</span>
+<span class="nb">touch</span> ~/.ssh/config
+<span class="c">#Host github.com</span>
+<span class="c">#  AddKeysToAgent yes</span>
+<span class="c">#  UseKeychain yes</span>
+<span class="c">#  IdentityFile ~/.ssh/id_ed25519</span>
+<span class="c">#ssh-add --apple-use-keychain ~/.ssh/id_ed25519</span>
+
+pbcopy &lt; ~/.ssh/id_ed25519.pub
+</pre></td></tr></tbody></table></code></div></div>
+<p>Open Github &gt; Settings &gt; SSH and GPG Keys &gt; New SSH Key and paste the public key. To verif the ssh connection use the following cmd <code class="language-plaintext highlighter-rouge">ssh -T git@github.com</code></p>
 
   </div>
 

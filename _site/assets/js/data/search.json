@@ -14,7 +14,7 @@
 
     
     "snippet": "GitGit is an opensource version control system used to track changes in files. It’s a powerful tool allowing multiple developers to work efficiently on a single code-base.Cheatsheetgit initgit add ...",
-    "content": "GitGit is an opensource version control system used to track changes in files. It’s a powerful tool allowing multiple developers to work efficiently on a single code-base.Cheatsheetgit initgit add .git pullgit pushgit clone https://git@repositoryUrlgit commit -m \"my first commit\"git branch branchNamegit checkout branchName"
+    "content": "GitGit is an opensource version control system used to track changes in files. It’s a powerful tool allowing multiple developers to work efficiently on a single code-base.Cheatsheetgit initgit add .git pullgit pushgit clone https://git@repositoryUrlgit commit -m \"my first commit\"git branch branchNamegit checkout branchNameGitHub SSH SetupIt’s a dev platform utilizing git for distributed version control. The best way to use github is by setting it up via ssh.#If no password is needed, press enter on promptsls -al ~/.sshssh-keygen -t ed25519 -C \"your_email@example.com\"eval \"$(ssh-agent -s)\"#Paste the following in configtouch ~/.ssh/config#Host github.com#  AddKeysToAgent yes#  UseKeychain yes#  IdentityFile ~/.ssh/id_ed25519#ssh-add --apple-use-keychain ~/.ssh/id_ed25519pbcopy &lt; ~/.ssh/id_ed25519.pubOpen Github &gt; Settings &gt; SSH and GPG Keys &gt; New SSH Key and paste the public key. To verif the ssh connection use the following cmd ssh -T git@github.com"
   },
   
   {
@@ -31,7 +31,7 @@
 
     
     "snippet": "Symlink:Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directo...",
-    "content": "Symlink:Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory. The source file/dir is called a target.#createln -s ~/path/to/target ~/symlinkFile#deleterm -rf ~/path/to/target ~/symlinkFile"
+    "content": "Symlink:Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory. The source file/dir is called a target.#createln -s ~/path/to/target ~/symlinkFile#deleterm -rf ~/symlinkFile"
   },
   
   {
