@@ -31,7 +31,7 @@
 
     
     "snippet": "Symlink:Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directo...",
-    "content": "Symlink:Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory. The source file/dir is called a target.#createln -s ~/path/to/target ~/symlinkFile#deleterm -rf ~/symlinkFile"
+    "content": "Symlink:Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory.  The source file/dir is called a target.  Example use case: if you want your game’s save file to be stored in /hardDisk/saveFile then create a symlink from /saveFolder/saveFile to the new location.  Symlinks are of two types:          Soft Links: Points to the original file &gt; Original File points to the inode      Hard Links: Points to the inode itself        Soft Links:```bash#createln -s ~/path/to/original ~/symlinkFileln -s ‘/path/to/original with spaces’ ‘/path/to/link with spaces’#deleterm -rf ~/symlinkFile2. Hard Links:```bashln ~/path/to/original ~/symlinkFile"
   },
   
   {

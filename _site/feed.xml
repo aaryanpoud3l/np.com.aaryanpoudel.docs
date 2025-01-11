@@ -4,7 +4,7 @@
   <id>https://aaryanpoudel.com.np/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-01-10T12:29:28+05:45</updated>
+  <updated>2025-01-11T19:56:07+05:45</updated>
   <author>
     <name>Aaryan Poudel</name>
     <uri>https://aaryanpoudel.com.np/</uri>
@@ -24,7 +24,7 @@
     <link href="https://aaryanpoudel.com.np/posts/cheatSheet-git/" rel="alternate" type="text/html" title="Git &amp;amp; GitHub SSH Setup" />
     <published>2025-01-09T18:07:24+05:45</published>
   
-    <updated>2025-01-10T11:40:47+05:45</updated>
+    <updated>2025-01-10T12:30:05+05:45</updated>
   
     <id>https://aaryanpoudel.com.np/posts/cheatSheet-git/</id>
     <content src="https://aaryanpoudel.com.np/posts/cheatSheet-git/" />
@@ -97,15 +97,10 @@ It’s a dev platform utilizing git for dist...
 
       Symlink:
 
-Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory. The source file/dir is called a target.
+Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory.
 
-#create
-ln -s ~/path/to/target ~/symlinkFile
-
-#delete
-rm -rf ~/symlinkFile
-
-
+  The source file/dir is called a target.
+  Example use case: if you want your game’s save file to be stored in /hardDisk/saveFile then create a symlink from /saveFolder/saveFile to the new loc...
     </summary>
   
 

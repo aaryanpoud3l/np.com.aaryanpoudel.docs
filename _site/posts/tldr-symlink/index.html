@@ -677,7 +677,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="54 words"
+  title="122 words"
 >
   <em>1 min</em> read</span>
 
@@ -690,20 +690,38 @@
   <div class="content">
     <h1 id="symlink">Symlink:</h1>
 
-<p>Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory. The source file/dir is called a target.</p>
+<p>Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory.</p>
+<ul>
+  <li>The source file/dir is called a target.</li>
+  <li>Example use case: if you want your game’s save file to be stored in /hardDisk/saveFile then create a symlink from /saveFolder/saveFile to the new location.</li>
+  <li>Symlinks are of two types:
+    <ol>
+      <li>Soft Links: Points to the original file &gt; Original File points to the inode</li>
+      <li>Hard Links: Points to the inode itself</li>
+    </ol>
+  </li>
+</ul>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<ol>
+  <li>Soft Links:
+```bash
+#create
+ln -s ~/path/to/original ~/symlinkFile
+ln -s ‘/path/to/original with spaces’ ‘/path/to/link with spaces’</li>
+</ol>
+
+<p>#delete
+rm -rf ~/symlinkFile</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
-5
-</pre></td><td class="rouge-code"><pre><span class="c">#create</span>
-<span class="nb">ln</span> <span class="nt">-s</span> ~/path/to/target ~/symlinkFile
-
-<span class="c">#delete</span>
-<span class="nb">rm</span> <span class="nt">-rf</span> ~/symlinkFile
+</pre></td><td class="rouge-code"><pre>
+2. Hard Links:
+```bash
+ln ~/path/to/original ~/symlinkFile
 </pre></td></tr></tbody></table></code></div></div>
 
   </div>
@@ -824,14 +842,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/tldr-symlink/">Symbolic Link / Symlink</a>
+          <a href="/posts/cheatSheet-git/">Git & GitHub SSH Setup</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/cheatSheet-git/">Git & GitHub SSH Setup</a>
+          <a href="/posts/tldr-symlink/">Symbolic Link / Symlink</a>
         </li>
       
         
