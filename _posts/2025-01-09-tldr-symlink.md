@@ -15,6 +15,7 @@ Symlink is a type of file that's used to point to another file/directory. It con
 	2. Hard Links: Points to the inode itself	
 
 1. Soft Links:
+
 ```bash
 #create
 ln -s ~/path/to/original ~/symlinkFile
@@ -25,6 +26,7 @@ rm -rf ~/symlinkFile
 ```
 
 2. Hard Links:
+
 ```bash
 ln ~/path/to/original ~/symlinkFile
 ```
