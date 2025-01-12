@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Useful Applications",
+    "url": "/posts/blog-usefulApplications/",
+    "categories": "Blogs",
+    "tags": "blog",
+    "date": "2025-01-12 22:23:24 +0545",
+    
+
+
+
+
+
+    
+    "snippet": "This list contains the most useful apps that I have installed on my system.Utility:      Syncthing: Open source sync solutions that allows syncing of file/ folders. Download        Localsend: Open ...",
+    "content": "This list contains the most useful apps that I have installed on my system.Utility:      Syncthing: Open source sync solutions that allows syncing of file/ folders. Download        Localsend: Open source airdrop replacement to send file on local network. DownloadInstall Script brew install --cask localsend        Raycast: A spotlight alternative for Mac with tons of plugins and customization options. Download        Batfi: Battery limiter to extend battery health of Mac. Download        Ice: Open source menu bar manager to hide unwanted icons from the menu bar. Github, Website.Install Script brew install jordanbaird-ice  Productivity:  Obsidian: Obsidian allows taking note using markdown. It has varieties of plugins that can tweak obisidian to your liking. DownloadDeveloper:  UTM: Open source virtualization software. Download"
+  },
+  
+  {
     "title": "Git & GitHub SSH Setup",
     "url": "/posts/cheatSheet-git/",
     "categories": "Cheatsheets",

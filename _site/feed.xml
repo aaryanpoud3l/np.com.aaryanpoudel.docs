@@ -4,7 +4,7 @@
   <id>https://aaryanpoudel.com.np/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-01-11T19:58:27+05:45</updated>
+  <updated>2025-01-12T22:53:05+05:45</updated>
   <author>
     <name>Aaryan Poudel</name>
     <uri>https://aaryanpoudel.com.np/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Useful Applications</title>
+    <link href="https://aaryanpoudel.com.np/posts/blog-usefulApplications/" rel="alternate" type="text/html" title="Useful Applications" />
+    <published>2025-01-12T22:23:24+05:45</published>
+  
+    <updated>2025-01-12T22:23:24+05:45</updated>
+  
+    <id>https://aaryanpoudel.com.np/posts/blog-usefulApplications/</id>
+    <content src="https://aaryanpoudel.com.np/posts/blog-usefulApplications/" />
+    <author>
+      <name>Aaryan Poudel</name>
+    </author>
+
+  
+    
+    <category term="Blogs" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This list contains the most useful apps that I have installed on my system.
+
+Utility:
+
+  
+    Syncthing: Open source sync solutions that allows syncing of file/ folders. Download
+  
+  
+    Localsend: Open source airdrop replacement to send file on local network. Download
+Install Script brew install --cask localsend
+  
+  
+    Raycast: A spotlight alternative for Mac with tons of plugins and cust...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -73,7 +119,7 @@ It’s a dev platform utilizing git for dist...
     <link href="https://aaryanpoudel.com.np/posts/tldr-symlink/" rel="alternate" type="text/html" title="Symbolic Link / Symlink" />
     <published>2025-01-09T17:52:24+05:45</published>
   
-    <updated>2025-01-11T19:56:41+05:45</updated>
+    <updated>2025-01-11T19:58:48+05:45</updated>
   
     <id>https://aaryanpoudel.com.np/posts/tldr-symlink/</id>
     <content src="https://aaryanpoudel.com.np/posts/tldr-symlink/" />
@@ -193,56 +239,6 @@ gg -&amp;gt; first line of page
 G -&amp;gt; last line of page
 :number -&amp;gt; specified line number
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Neovim Init Setup</title>
-    <link href="https://aaryanpoudel.com.np/posts/init-neovimSetup/" rel="alternate" type="text/html" title="Neovim Init Setup" />
-    <published>2025-01-07T20:49:53+05:45</published>
-  
-    <updated>2025-01-09T12:27:40+05:45</updated>
-  
-    <id>https://aaryanpoudel.com.np/posts/init-neovimSetup/</id>
-    <content src="https://aaryanpoudel.com.np/posts/init-neovimSetup/" />
-    <author>
-      <name>Aaryan Poudel</name>
-    </author>
-
-  
-    
-    <category term="Setups" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Neovim
-Neovim is a cli based text editor written in lua. It’s written in lua and is based on vim.
-
-Use :q! to quit or :wq to write &amp;amp; quit btw.
-
-Installation on Mac
-#Using HomeBrew
-brew install neovim 
-
-#Verify the Installation
-nvim -v
-
-
-Configuring Package Manager
-#Setting up lazy.nvim
-mkdir ~/.config/nvim &amp;amp;&amp;amp; touch ~/.config/nvim/init.lua
-echo 'require("config.lazy")' &amp;gt;&amp;gt; ~/.co...
     </summary>
   
 
