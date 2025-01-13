@@ -8,22 +8,30 @@ tags: ["blog"]
 This list contains the most useful apps that I have installed on my system.
 
 ### Utility:
+
 1. Syncthing: Open source sync solutions that allows syncing of file/ folders. [Download](https://syncthing.net/downloads/ "Download Syncthing")
 
 2. Localsend: Open source airdrop replacement to send file on local network. [Download](https://localsend.org/download "Download Localsend")
 Install Script `brew install --cask localsend`
 
-3. Raycast: A spotlight alternative for Mac with tons of plugins and customization options. [Download](https://www.raycast.com/ "Download Raycast")
+3. Raycast: Spotlight alternative for Mac with tons of plugins and customization options. [Download](https://www.raycast.com/ "Download Raycast")
 
 4. Batfi: Battery limiter to extend battery health of Mac. [Download](https://files.micropixels.software/batfi/BatFi-latest.zip "Download Batfi")
 
 5. Ice: Open source menu bar manager to hide unwanted icons from the menu bar. [Github](https://github.com/jordanbaird/Ice "View Github of Ice"), [Website](https://icemenubar.app "View Site of Ice Menu Bar").
 Install Script `brew install jordanbaird-ice`
 
+6. Bitwarden: Open source password manager. Can be used a [browser extension](https://chromewebstore.google.com/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb "Download Chrome Extension of Bitwarden"), [Github](https://github.com/bitwarden/ "View Github of Bitwarden"), [Download](https://bitwarden.com/download/ "Download Bitwarden") 
+Install Script `brew install bitwarden`
+
 ### Productivity:
 
 1. Obsidian: Obsidian allows taking note using markdown. It has varieties of plugins that can tweak obisidian to your liking. [Download](https://obsidian.md/download "Download Obisidan")
 
-
 ### Developer:
-1. UTM: Open source virtualization software. [Download](https://mac.getutm.app/ "Download UTM")
+
+1. Ghostty: Open source terminal emulator. [Download](https://ghostty.org/download "Download Ghostty") [Github](https://github.com/ghostty-org/ghostty "View Github of Ghostty")
+
+2. Termius: Gui SSH Client for ssh vault. [Download](https://termius.com/download/macos "Download Termius")
+
+3. UTM: Open source virtualization software. [Download](https://mac.getutm.app/ "Download UTM")
