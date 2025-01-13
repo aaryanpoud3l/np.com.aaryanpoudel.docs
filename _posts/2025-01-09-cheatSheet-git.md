@@ -1,7 +1,7 @@
 ---
 title: "Git & GitHub SSH Setup"
 date: 2025-01-09T18:07:24+05:45
-categories: ['Cheatsheets']
+categories: ['CheatSheets']
 tags: ["tldr,blog,cheatsheet,cli"]
 ---
 
