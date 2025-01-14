@@ -14,13 +14,13 @@
 
     
     "snippet": "This list contains the most useful apps that I have installed on my system.Utility:      Syncthing: Open source sync solutions that allows syncing of file/ folders. Download        Localsend: Open ...",
-    "content": "This list contains the most useful apps that I have installed on my system.Utility:      Syncthing: Open source sync solutions that allows syncing of file/ folders. Download        Localsend: Open source airdrop replacement to send file on local network. DownloadInstall Script brew install --cask localsend        Raycast: Spotlight alternative for Mac with tons of plugins and customization options. Download        Batfi: Battery limiter to extend battery health of Mac. Download        Ice: Open source menu bar manager to hide unwanted icons from the menu bar. Github, Website.Install Script brew install jordanbaird-ice        Bitwarden: Open source password manager. Can be used a browser extension, Github, Download Install Script brew install bitwarden  Productivity:  Obsidian: Obsidian allows taking note using markdown. It has varieties of plugins that can tweak obisidian to your liking. DownloadDeveloper:      Ghostty: Open source terminal emulator. Download Github        Termius: Gui SSH Client for ssh vault. Download        UTM: Open source virtualization software. Download  "
+    "content": "This list contains the most useful apps that I have installed on my system.Utility:      Syncthing: Open source sync solutions that allows syncing of file/ folders. Download        Localsend: Open source airdrop replacement to send file on local network. DownloadInstall Script brew install --cask localsend        Bitwarden: Open source password manager. Can be used a browser extension, Github, Download Install Script brew install bitwarden  Customization:      Obsidian: Obsidian allows taking note using markdown. It has varieties of plugins that can tweak obisidian to your liking. Download        Raycast: Spotlight alternative for Mac with tons of plugins and customization options. Download        AltTab: OpenSource alternative for customizing the alt tabbing. Download [Github](https://github.com/lwouis/alt-tab-macos “View Github of AltTab)        Batfi: Battery limiter to extend battery health of Mac. Download        Ice: Open source menu bar manager to hide unwanted icons from the menu bar. Github, Website. Install Script brew install jordanbaird-ice  Developer:      Ghostty: Open source terminal emulator. Download Github        Termius: Gui SSH Client for ssh vault. Download        UTM: Open source virtualization software. Download  "
   },
   
   {
     "title": "Git & GitHub SSH Setup",
     "url": "/posts/cheatSheet-git/",
-    "categories": "Cheatsheets",
+    "categories": "CheatSheets",
     "tags": "tldr,blog,cheatsheet,cli",
     "date": "2025-01-09 18:07:24 +0545",
     

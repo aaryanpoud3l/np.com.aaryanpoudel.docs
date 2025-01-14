@@ -4,7 +4,7 @@
   <id>https://aaryanpoudel.com.np/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-01-13T12:34:23+05:45</updated>
+  <updated>2025-01-14T19:40:23+05:45</updated>
   <author>
     <name>Aaryan Poudel</name>
     <uri>https://aaryanpoudel.com.np/</uri>
@@ -24,7 +24,7 @@
     <link href="https://aaryanpoudel.com.np/posts/blog-usefulApplications/" rel="alternate" type="text/html" title="Useful Applications" />
     <published>2025-01-12T22:23:24+05:45</published>
   
-    <updated>2025-01-12T22:23:24+05:45</updated>
+    <updated>2025-01-13T12:34:56+05:45</updated>
   
     <id>https://aaryanpoudel.com.np/posts/blog-usefulApplications/</id>
     <content src="https://aaryanpoudel.com.np/posts/blog-usefulApplications/" />
@@ -59,7 +59,7 @@ Utility:
 Install Script brew install --cask localsend
   
   
-    Raycast: Spotlight alternative for Mac with tons of plugins and custo...
+    Bitwarden: Open source password manager. Can be used a browser extens...
     </summary>
   
 
@@ -71,7 +71,7 @@ Install Script brew install --cask localsend
     <link href="https://aaryanpoudel.com.np/posts/cheatSheet-git/" rel="alternate" type="text/html" title="Git &amp;amp; GitHub SSH Setup" />
     <published>2025-01-09T18:07:24+05:45</published>
   
-    <updated>2025-01-10T12:30:05+05:45</updated>
+    <updated>2025-01-13T21:38:55+05:45</updated>
   
     <id>https://aaryanpoudel.com.np/posts/cheatSheet-git/</id>
     <content src="https://aaryanpoudel.com.np/posts/cheatSheet-git/" />
@@ -81,7 +81,7 @@ Install Script brew install --cask localsend
 
   
     
-    <category term="Cheatsheets" />
+    <category term="CheatSheets" />
     
   
 
