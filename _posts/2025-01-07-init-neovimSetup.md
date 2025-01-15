@@ -19,8 +19,7 @@ brew install neovim
 #Verify the Installation
 nvim -v
 ```
-
-## Configuring Package Manager
+## Configuring Lazy (Package Manager)
 ```bash
 #Setting up lazy.nvim
 mkdir ~/.config/nvim && touch ~/.config/nvim/init.lua
@@ -55,4 +54,13 @@ require("lazy").setup({
   install = { colorscheme = { "gruvbox" } },
   checker = { enabled = true },
 })
+```
+
+## Plugins and Customizations
+
+```sh 
+#Clone my .dotfiles
+git clone git@github.com:aaryanpoudel/.dotfiles.git
+mv .dotfiles ~/
+ln -s ~/.dotfiles/terminal/nvim ~/.config/nvim
 ```

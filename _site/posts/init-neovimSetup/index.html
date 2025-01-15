@@ -590,6 +590,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -709,7 +720,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="203 words"
+  title="224 words"
 >
   <em>1 min</em> read</span>
 
@@ -739,8 +750,7 @@ brew <span class="nb">install </span>neovim
 <span class="c">#Verify the Installation</span>
 nvim <span class="nt">-v</span>
 </pre></td></tr></tbody></table></code></div></div>
-
-<h2 id="configuring-package-manager"><span class="me-2">Configuring Package Manager</span><a href="#configuring-package-manager" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="configuring-lazy-package-manager"><span class="me-2">Configuring Lazy (Package Manager)</span><a href="#configuring-lazy-package-manager" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -809,6 +819,20 @@ require<span class="o">(</span><span class="s2">"lazy"</span><span class="o">)</
   <span class="nb">install</span> <span class="o">=</span> <span class="o">{</span> colorscheme <span class="o">=</span> <span class="o">{</span> <span class="s2">"gruvbox"</span> <span class="o">}</span> <span class="o">}</span>,
   checker <span class="o">=</span> <span class="o">{</span> enabled <span class="o">=</span> <span class="nb">true</span> <span class="o">}</span>,
 <span class="o">})</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="plugins-and-customizations"><span class="me-2">Plugins and Customizations</span><a href="#plugins-and-customizations" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-sh highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="c">#Clone my .dotfiles</span>
+git clone git@github.com:aaryanpoudel/.dotfiles.git
+<span class="nb">mv</span> .dotfiles ~/
+<span class="nb">ln</span> <span class="nt">-s</span> ~/.dotfiles/terminal/nvim ~/.config/nvim
 </pre></td></tr></tbody></table></code></div></div>
 
   </div>
