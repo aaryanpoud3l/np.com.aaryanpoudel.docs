@@ -28,6 +28,9 @@ Install Script `brew install bitwarden`
 
 5. Ice: Open source menu bar manager to hide unwanted icons from the menu bar. [Github](https://github.com/jordanbaird/Ice "View Github of Ice"), [Website](https://icemenubar.app "View Site of Ice Menu Bar"). Install Script `brew install jordanbaird-ice`
 
+6. Stats: Open source system monitor for the menu bar. [Github](https://github.com/exelban/stats "View Github of Stats"), [Download](https://github.com/exelban/stats/releases/latest/download/Stats.dmg "Download Stats"). Install Script `brew install stats`
+
+
 ### Developer:
 
 1. Ghostty: Open source terminal emulator. [Download](https://ghostty.org/download "Download Ghostty") [Github](https://github.com/ghostty-org/ghostty "View Github of Ghostty")
