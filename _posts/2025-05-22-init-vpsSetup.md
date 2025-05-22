@@ -1,5 +1,5 @@
 ---
-title: "Symbolic Link / Symlink"
+title: "VPS Init Setup"
 date: 2025-05-22T16:30:00+01:00
 categories: ['Setups']
 tags: ["cheatsheet,setup,linux"]
