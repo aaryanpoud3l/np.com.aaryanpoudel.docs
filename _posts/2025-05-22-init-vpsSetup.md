@@ -7,8 +7,6 @@ tags: ["cheatsheet,setup,linux"]
 
 # Configuring a VPS
 
-### Init:
-
 Add your public key to VPS:
 
 ```sh
@@ -103,7 +101,7 @@ server {
     listen 80;
     server_name sub.domain.com www.sub.domain.com;
 
-    root /var/www/sub.domain.com/html;
+    root /var/www/sub.domain.com/;
     index index.html;
 
     location / {
@@ -112,7 +110,7 @@ server {
 }
 
 #Create Symlink
-sudo ln -s /etc/nginx/sites-available/sub.domain.com /etc/nginx/sites-available/sub.domain.com
+sudo ln -s /etc/nginx/sites-available/sub.domain.com /etc/nginx/sites-enabled/sub.domain.com
 sudo nginx -t
 sudo systemctl restart nginx
 
@@ -134,4 +132,4 @@ sudo crontab -e
 0 3 * * * /usr/bin/certbot renew --quiet
 ```
 
-Site should now be assessible via https using `curl https://sub.domain.com` , From cloudflare, you can enable proxy
+Site should now be assessible via https using `curl https://sub.domain.com` , From cloudflare, you can enable proxy.

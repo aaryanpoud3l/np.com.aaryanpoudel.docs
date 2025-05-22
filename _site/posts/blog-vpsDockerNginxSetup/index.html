@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Symbolic Link / Symlink" />
+<meta property="og:title" content="VPS Docker Deployment Using Nginx" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Symlink:" />
-<meta property="og:description" content="Symlink:" />
-<link rel="canonical" href="https://aaryanpoudel.com.np/posts/tldr-symlink/" />
-<meta property="og:url" content="https://aaryanpoudel.com.np/posts/tldr-symlink/" />
+<meta name="description" content="Nginx Docker Setup on a VPS" />
+<meta property="og:description" content="Nginx Docker Setup on a VPS" />
+<link rel="canonical" href="https://aaryanpoudel.com.np/posts/blog-vpsDockerNginxSetup/" />
+<meta property="og:url" content="https://aaryanpoudel.com.np/posts/blog-vpsDockerNginxSetup/" />
 <meta property="og:site_name" content="Aaryan Poudel" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-01-09T12:07:24+00:00" />
+<meta property="article:published_time" content="2025-05-22T23:33:00+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Symbolic Link / Symlink" />
+<meta property="twitter:title" content="VPS Docker Deployment Using Nginx" />
 <meta name="twitter:site" content="@aaryanpoud3l" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-11T14:13:48+00:00","datePublished":"2025-01-09T12:07:24+00:00","description":"Symlink:","headline":"Symbolic Link / Symlink","mainEntityOfPage":{"@type":"WebPage","@id":"https://aaryanpoudel.com.np/posts/tldr-symlink/"},"url":"https://aaryanpoudel.com.np/posts/tldr-symlink/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-22T23:33:00+01:00","datePublished":"2025-05-22T23:33:00+01:00","description":"Nginx Docker Setup on a VPS","headline":"VPS Docker Deployment Using Nginx","mainEntityOfPage":{"@type":"WebPage","@id":"https://aaryanpoudel.com.np/posts/blog-vpsDockerNginxSetup/"},"url":"https://aaryanpoudel.com.np/posts/blog-vpsDockerNginxSetup/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Symbolic Link / Symlink | Aaryan Poudel
+  <title>VPS Docker Deployment Using Nginx | Aaryan Poudel
   </title>
 
   <!--
@@ -478,7 +478,7 @@
         
           
             
-              <span>Symbolic Link / Symlink</span>
+              <span>VPS Docker Deployment Using Nginx</span>
             
 
           
@@ -587,7 +587,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Symbolic Link / Symlink</h1>
+    <h1 data-toc-skip>VPS Docker Deployment Using Nginx</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -603,41 +603,18 @@
 
 <time
   
-  data-ts="1736424444"
+  data-ts="1747953180"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan  9, 2025
+  May 22, 2025
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1736604828"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Jan 11, 2025
-</time>
-
-        </span>
       
 
       
@@ -677,7 +654,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="122 words"
+  title="143 words"
 >
   <em>1 min</em> read</span>
 
@@ -688,48 +665,92 @@
   </header>
 
   <div class="content">
-    <h1 id="symlink">Symlink:</h1>
+    <h1 id="nginx-docker-setup-on-a-vps">Nginx Docker Setup on a VPS</h1>
 
-<p>Symlink is a type of file that’s used to point to another file/directory. It contains a text string that’s automatically interpreted and followed by the OS as a path to another file/directory.</p>
-<ul>
-  <li>The source file/dir is called a target.</li>
-  <li>Example use case: if you want your game’s save file to be stored in /hardDisk/saveFile then create a symlink from /saveFolder/saveFile to the new location.</li>
-  <li>Symlinks are of two types:
-    <ol>
-      <li>Soft Links: Points to the original file &gt; Original File points to the inode</li>
-      <li>Hard Links: Points to the inode itself</li>
-    </ol>
-  </li>
-</ul>
-
-<ol>
-  <li>Soft Links:</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
 6
-</pre></td><td class="rouge-code"><pre><span class="c">#create</span>
-<span class="nb">ln</span> <span class="nt">-s</span> ~/path/to/original ~/symlinkFile
-<span class="nb">ln</span> <span class="nt">-s</span> <span class="s1">'/path/to/original with spaces'</span> <span class="s1">'/path/to/link with spaces'</span>
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+</pre></td><td class="rouge-code"><pre>mkdir ~/dockerDemo/html &amp;&amp; cd ~/dockerDemo;
+echo 'hello world from docker using nginx' &gt; html/index.html
+touch Dockerfile docker-compose.yml nginx.conf
 
-<span class="c">#delete</span>
-<span class="nb">rm</span> <span class="nt">-rf</span> ~/symlinkFile
-</pre></td></tr></tbody></table></code></div></div>
+#nginx.conf
+events {}
+http {
+    server {
+        listen 80;
+        server_name sub.domain.com www.sub.domain.com&gt;
 
-<ol>
-  <li>Hard Links:</li>
-</ol>
+        root /usr/share/nginx/html;
+        index index.html;
+        location / {
+            try_files $uri $uri/ =404;
+        }
+    }
+}
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">ln</span> ~/path/to/original ~/symlinkFile
+#Dockerfile
+FROM nginx:alpine
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY html/ /usr/share/nginx/html/
+
+#docker-compose.yml
+services:
+  nginx:
+    build: .
+    ports:
+      - "80:80"
+    restart: always
+
+#Build image and serve
+docker compose build
+docker compose up -d
+
+#Verify the docker is serving the html site
+#Checking Locally
+curl localhost:80 
+# After pointing to the subdomain via cloudflare
+curl http://sub.domain.com 
 </pre></td></tr></tbody></table></code></div></div>
 
   </div>
@@ -740,7 +761,7 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/tldr/">TLDR</a>
+          <a href="/categories/setups/">Setups</a>
       </div>
     
 
@@ -750,9 +771,9 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/tldr-blog/"
+            href="/tags/setup-linux/"
             class="post-tag no-text-decoration"
-          >tldr,blog</a>
+          >setup,linux</a>
         
       </div>
     
@@ -788,14 +809,14 @@
 
       
 
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Faaryanpoudel.com.np%2Fposts%2Ftldr-symlink%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Faaryanpoudel.com.np%2Fposts%2Fblog-vpsDockerNginxSetup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
         <i class="fa-fw fab fa-linkedin"></i>
       </a>
     
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Symbolic%20Link%20/%20Symlink%20-%20Aaryan%20Poudel&url=https%3A%2F%2Faaryanpoudel.com.np%2Fposts%2Ftldr-symlink%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=VPS%20Docker%20Deployment%20Using%20Nginx%20-%20Aaryan%20Poudel&url=https%3A%2F%2Faaryanpoudel.com.np%2Fposts%2Fblog-vpsDockerNginxSetup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
@@ -1326,6 +1347,101 @@
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -1335,6 +1451,142 @@
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/init-ubuntuSetup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1699941828"
+  data-df="ll"
+  
+>
+  Nov 14, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Ubuntu Initial Setup</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  The scripts have been verified on Ubuntu 22.04 LTS :
+
+#Essentials
+sudo apt remove firefox geary gnome-weather gnome-contacts gnome-system-monitor gnome-user-docs gnome-logs;
+sudo snap remove firefo...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/init-qemuSetup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1699944331"
+  data-df="ll"
+  
+>
+  Nov 14, 2023
+</time>
+
+              <h4 class="pt-0 my-2">QEMU Virtual Machine Setup</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  QEMU is a Level 0 HyperVisor and allows for the best VM performance in linux.
+
+Installation:
+
+sudo apt update -y; sudo apt upgrade -y; sudo apt autoremove -y; sudo apt autopurge;
+sudo apt install v...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/init-hugoSetup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1701117953"
+  data-df="ll"
+  
+>
+  Nov 27, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Hugo Init Setup & CMD</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Hugo is used for generating static sites using markdown. This blog has been created using Hugo.
+
+Get Hugo using apt on Ubuntu based distros:
+
+sudo apt install hugo;
+
+
+Commands
+
+#Project Setup
+hugo ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1347,22 +1599,18 @@
 
   
     <a
-      href="/posts/init-dotfilesSetup/"
+      href="/posts/init-vpsSetup/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Dotfiles & Config Setup using Git</p>
+      <p>VPS Init Setup</p>
     </a>
   
 
   
-    <a
-      href="/posts/cheatSheet-git/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Git & GitHub SSH Setup</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
