@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://aaryanpoudel.com.np/</id>
+  <id>http://localhost:4000/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-05-22T18:48:41+01:00</updated>
+  <updated>2025-05-22T18:56:27+01:00</updated>
   <author>
     <name>Aaryan Poudel</name>
-    <uri>https://aaryanpoudel.com.np/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://aaryanpoudel.com.np/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="https://aaryanpoudel.com.np/"/>
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
   <rights> © 2025 Aaryan Poudel </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>VPS Init Setup</title>
-    <link href="https://aaryanpoudel.com.np/posts/init-vpsSetup/" rel="alternate" type="text/html" title="VPS Init Setup" />
+    <link href="http://localhost:4000/posts/init-vpsSetup/" rel="alternate" type="text/html" title="VPS Init Setup" />
     <published>2025-05-22T16:30:00+01:00</published>
   
     <updated>2025-05-22T18:43:02+01:00</updated>
   
-    <id>https://aaryanpoudel.com.np/posts/init-vpsSetup/</id>
-    <content src="https://aaryanpoudel.com.np/posts/init-vpsSetup/" />
+    <id>http://localhost:4000/posts/init-vpsSetup/</id>
+    <content src="http://localhost:4000/posts/init-vpsSetup/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -50,29 +50,31 @@
 
 Init:
 
-  Add your public key to VPS:
-```sh
+Add your public key to VPS:
+
 #In Local
 pbcopy &amp;lt; ~/.ssh/id_ed25519.pub
-
 
 #In VPS
 nano ~/.ssh/authorized_keys  # Add .pub content here
 
-2. Update &amp;amp; Upgrade:
-   `sudo apt update &amp;amp;&amp;amp; sudo apt upgrade`
 
-3. Check if reboot required:
-   `ls /var/run/reboot-required`
+Update &amp;amp; Upgrade:
 
-4. Change root pw:
-```sh
+sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
+
+Check if reboot required:
+
+ls /var/run/reboot-required
+
+Change root pw:
 sudo su
 passwd
 
 
-
-  Create non-root user &amp;amp; add to sudoers gr...
+Create non-root user &amp;amp; add to sudoers group:
+useradd userName
+usermod -aG...
     </summary>
   
 
@@ -81,13 +83,13 @@ passwd
   
   <entry>
     <title>Useful Applications</title>
-    <link href="https://aaryanpoudel.com.np/posts/blog-usefulApplications/" rel="alternate" type="text/html" title="Useful Applications" />
+    <link href="http://localhost:4000/posts/blog-usefulApplications/" rel="alternate" type="text/html" title="Useful Applications" />
     <published>2025-01-12T16:38:24+00:00</published>
   
     <updated>2025-01-19T16:33:56+00:00</updated>
   
-    <id>https://aaryanpoudel.com.np/posts/blog-usefulApplications/</id>
-    <content src="https://aaryanpoudel.com.np/posts/blog-usefulApplications/" />
+    <id>http://localhost:4000/posts/blog-usefulApplications/</id>
+    <content src="http://localhost:4000/posts/blog-usefulApplications/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -127,13 +129,13 @@ Utility:
   
   <entry>
     <title>Git &amp; GitHub SSH Setup</title>
-    <link href="https://aaryanpoudel.com.np/posts/cheatSheet-git/" rel="alternate" type="text/html" title="Git &amp;amp; GitHub SSH Setup" />
+    <link href="http://localhost:4000/posts/cheatSheet-git/" rel="alternate" type="text/html" title="Git &amp;amp; GitHub SSH Setup" />
     <published>2025-01-09T12:22:24+00:00</published>
   
     <updated>2025-01-13T15:53:55+00:00</updated>
   
-    <id>https://aaryanpoudel.com.np/posts/cheatSheet-git/</id>
-    <content src="https://aaryanpoudel.com.np/posts/cheatSheet-git/" />
+    <id>http://localhost:4000/posts/cheatSheet-git/</id>
+    <content src="http://localhost:4000/posts/cheatSheet-git/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -176,13 +178,13 @@ It’s a dev platform utilizing git for dist...
   
   <entry>
     <title>Symbolic Link / Symlink</title>
-    <link href="https://aaryanpoudel.com.np/posts/tldr-symlink/" rel="alternate" type="text/html" title="Symbolic Link / Symlink" />
+    <link href="http://localhost:4000/posts/tldr-symlink/" rel="alternate" type="text/html" title="Symbolic Link / Symlink" />
     <published>2025-01-09T12:07:24+00:00</published>
   
     <updated>2025-01-11T14:13:48+00:00</updated>
   
-    <id>https://aaryanpoudel.com.np/posts/tldr-symlink/</id>
-    <content src="https://aaryanpoudel.com.np/posts/tldr-symlink/" />
+    <id>http://localhost:4000/posts/tldr-symlink/</id>
+    <content src="http://localhost:4000/posts/tldr-symlink/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>
@@ -215,13 +217,13 @@ Symlink is a type of file that’s used to point to another file/directory. It c
   
   <entry>
     <title>Dotfiles &amp; Config Setup using Git</title>
-    <link href="https://aaryanpoudel.com.np/posts/init-dotfilesSetup/" rel="alternate" type="text/html" title="Dotfiles &amp;amp; Config Setup using Git" />
+    <link href="http://localhost:4000/posts/init-dotfilesSetup/" rel="alternate" type="text/html" title="Dotfiles &amp;amp; Config Setup using Git" />
     <published>2025-01-09T11:51:48+00:00</published>
   
     <updated>2025-01-09T11:51:48+00:00</updated>
   
-    <id>https://aaryanpoudel.com.np/posts/init-dotfilesSetup/</id>
-    <content src="https://aaryanpoudel.com.np/posts/init-dotfilesSetup/" />
+    <id>http://localhost:4000/posts/init-dotfilesSetup/</id>
+    <content src="http://localhost:4000/posts/init-dotfilesSetup/" />
     <author>
       <name>Aaryan Poudel</name>
     </author>

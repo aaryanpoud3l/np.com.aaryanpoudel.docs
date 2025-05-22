@@ -8,7 +8,9 @@ tags: ["cheatsheet,setup,linux"]
 # Configuring a VPS
 
 ### Init:
-1. Add your public key to VPS:
+
+Add your public key to VPS:
+
 ```sh
 #In Local
 pbcopy < ~/.ssh/id_ed25519.pub
@@ -17,27 +19,29 @@ pbcopy < ~/.ssh/id_ed25519.pub
 nano ~/.ssh/authorized_keys  # Add .pub content here
 ```
 
-2. Update & Upgrade:
-   `sudo apt update && sudo apt upgrade`
+Update & Upgrade:
 
-3. Check if reboot required:
-   `ls /var/run/reboot-required`
+`sudo apt update && sudo apt upgrade`
 
-4. Change root pw:
+Check if reboot required:
+
+`ls /var/run/reboot-required`
+
+Change root pw:
 ```sh
 sudo su
 passwd
 ```
 
-5. Create non-root user & add to sudoers group:
+Create non-root user & add to sudoers group:
 ```sh
 useradd userName
 usermod -aG sudo userName
 ```
 
-6. Add your public key (local) to newUser's authorized_keys file (in VPS) (Step 1)
+Add your public key (local) to newUser's authorized_keys file (in VPS) (Step 1)
 
-7. SSH into the VPS as the created user
+SSH into the VPS as the created user
 ```sh
 #Either Specify Input Key
 ssh -i ~/.ssh/id_ed25519.pub userName@publicIP
@@ -54,7 +58,7 @@ Host serverName
 ssh serverName 
 ```
 
-8. Disable password login & root login: Inside these files, set `PasswordAuthentication no`
+Disable password login & root login: Inside these files, set `PasswordAuthentication no`
 ```sh
 sudo nano /etc/ssh/sshd_config
 #Add
@@ -68,7 +72,7 @@ PasswordAuthentication no
 sudo service ssh restart
 ```
 
-9. Firewall Config:
+Firewall Config:
 ```sh
 sudo ufw status numbered
 sudo ufw show listening
@@ -78,7 +82,7 @@ sudo ufw allow 'Nginx Full'
 sudo service ssh restart #OR try systemctl daemon-reload
 ```
 
-10. Site Files & Permissions:
+Site Files & Permissions:
 Point the subdomain from cloudflare to the serverIP using A record & Server IP *(DNS Only)*
 ```sh
 sudo apt install nginx curl git -y
@@ -90,7 +94,7 @@ sudo chmod -R 755 /var/www/sub.domain.com
 sudo echo 'hello world' > /var/www/sub.domain.com/index.html
 ```
 
-11. Nginx Config:
+Nginx Config:
 ```sh
 sudo nano /etc/nginx/sites-available/sub.domain.com
 #In the file above, paste config, change domain & root dir
@@ -119,7 +123,7 @@ Also, open port from VPS provider dashboard > networking > subnet > security > v
 
 Site should now be assessible via http using `curl http://sub.domain.com`
 
-12. SSL Certificate using Let's Encrypt
+SSL Certificate using Let's Encrypt
 ```sh
 sudo apt install certbot python3-certbot-nginx -y
 sudo certbot --nginx -d sub.domain.com -d www.sub.domain.com
