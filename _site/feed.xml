@@ -4,7 +4,7 @@
   <id>https://aaryanpoudel.com.np/</id>
   <title>Aaryan Poudel</title>
   <subtitle>A minimal docs portfolio developed to keep track of all the code snippets and tutorials for knowledge sharing</subtitle>
-  <updated>2025-01-19T22:18:30+05:45</updated>
+  <updated>2025-05-22T18:38:25+01:00</updated>
   <author>
     <name>Aaryan Poudel</name>
     <uri>https://aaryanpoudel.com.np/</uri>
@@ -20,11 +20,71 @@
 
   
   <entry>
+    <title>Symbolic Link / Symlink</title>
+    <link href="https://aaryanpoudel.com.np/posts/init-vpsSetup/" rel="alternate" type="text/html" title="Symbolic Link / Symlink" />
+    <published>2025-05-22T16:30:00+01:00</published>
+  
+    <updated>2025-05-22T16:30:00+01:00</updated>
+  
+    <id>https://aaryanpoudel.com.np/posts/init-vpsSetup/</id>
+    <content src="https://aaryanpoudel.com.np/posts/init-vpsSetup/" />
+    <author>
+      <name>Aaryan Poudel</name>
+    </author>
+
+  
+    
+    <category term="Setups" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Configuring a VPS
+
+Init:
+
+  Add your public key to VPS:
+```sh
+#In Local
+pbcopy &amp;lt; ~/.ssh/id_ed25519.pub
+
+
+#In VPS
+nano ~/.ssh/authorized_keys  # Add .pub content here
+
+2. Update &amp;amp; Upgrade:
+   `sudo apt update &amp;amp;&amp;amp; sudo apt upgrade`
+
+3. Check if reboot required:
+   `ls /var/run/reboot-required`
+
+4. Change root pw:
+```sh
+sudo su
+passwd
+
+
+
+  Create non-root user &amp;amp; add to sudoers gr...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Useful Applications</title>
     <link href="https://aaryanpoudel.com.np/posts/blog-usefulApplications/" rel="alternate" type="text/html" title="Useful Applications" />
-    <published>2025-01-12T22:23:24+05:45</published>
+    <published>2025-01-12T16:38:24+00:00</published>
   
-    <updated>2025-01-14T19:56:57+05:45</updated>
+    <updated>2025-01-19T16:33:56+00:00</updated>
   
     <id>https://aaryanpoudel.com.np/posts/blog-usefulApplications/</id>
     <content src="https://aaryanpoudel.com.np/posts/blog-usefulApplications/" />
@@ -68,9 +128,9 @@ Utility:
   <entry>
     <title>Git &amp; GitHub SSH Setup</title>
     <link href="https://aaryanpoudel.com.np/posts/cheatSheet-git/" rel="alternate" type="text/html" title="Git &amp;amp; GitHub SSH Setup" />
-    <published>2025-01-09T18:07:24+05:45</published>
+    <published>2025-01-09T12:22:24+00:00</published>
   
-    <updated>2025-01-13T21:38:55+05:45</updated>
+    <updated>2025-01-13T15:53:55+00:00</updated>
   
     <id>https://aaryanpoudel.com.np/posts/cheatSheet-git/</id>
     <content src="https://aaryanpoudel.com.np/posts/cheatSheet-git/" />
@@ -117,9 +177,9 @@ It’s a dev platform utilizing git for dist...
   <entry>
     <title>Symbolic Link / Symlink</title>
     <link href="https://aaryanpoudel.com.np/posts/tldr-symlink/" rel="alternate" type="text/html" title="Symbolic Link / Symlink" />
-    <published>2025-01-09T17:52:24+05:45</published>
+    <published>2025-01-09T12:07:24+00:00</published>
   
-    <updated>2025-01-11T19:58:48+05:45</updated>
+    <updated>2025-01-11T14:13:48+00:00</updated>
   
     <id>https://aaryanpoudel.com.np/posts/tldr-symlink/</id>
     <content src="https://aaryanpoudel.com.np/posts/tldr-symlink/" />
@@ -156,9 +216,9 @@ Symlink is a type of file that’s used to point to another file/directory. It c
   <entry>
     <title>Dotfiles &amp; Config Setup using Git</title>
     <link href="https://aaryanpoudel.com.np/posts/init-dotfilesSetup/" rel="alternate" type="text/html" title="Dotfiles &amp;amp; Config Setup using Git" />
-    <published>2025-01-09T17:36:48+05:45</published>
+    <published>2025-01-09T11:51:48+00:00</published>
   
-    <updated>2025-01-09T17:36:48+05:45</updated>
+    <updated>2025-01-09T11:51:48+00:00</updated>
   
     <id>https://aaryanpoudel.com.np/posts/init-dotfilesSetup/</id>
     <content src="https://aaryanpoudel.com.np/posts/init-dotfilesSetup/" />
@@ -186,59 +246,6 @@ Dotfiles are files that’s used by applications or packages for storing it’s 
 Common dotfiles include .zshrc .bashrc .gitignore and are mostly stored in your home under .config directory.
 
 In this guide, I’ll list out the steps that I found to be the most way of storing, backing up the .dotfiles . The easiest...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>CheatSheet for Vim Key Bindings</title>
-    <link href="https://aaryanpoudel.com.np/posts/cheatSheet-vimKeys/" rel="alternate" type="text/html" title="CheatSheet for Vim Key Bindings" />
-    <published>2025-01-08T18:22:48+05:45</published>
-  
-    <updated>2025-01-09T12:43:07+05:45</updated>
-  
-    <id>https://aaryanpoudel.com.np/posts/cheatSheet-vimKeys/</id>
-    <content src="https://aaryanpoudel.com.np/posts/cheatSheet-vimKeys/" />
-    <author>
-      <name>Aaryan Poudel</name>
-    </author>
-
-  
-    
-    <category term="CheatSheets" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Vim Key Bindings CheatSheet
-
-Vim Modes:
-There are three modes. It’s used for the following:
-
-  Normal Mode: Movement, deletion and searching
-  Insert Mode: Entering text directly
-  Visual: Manipulating text using selection
-
-
-Movement:
-1. Basic navigations
-h -&amp;gt; left
-j -&amp;gt; down
-k -&amp;gt; up
-l -&amp;gt; right
-gg -&amp;gt; first line of page
-G -&amp;gt; last line of page
-:number -&amp;gt; specified line number
-...
     </summary>
   
 
