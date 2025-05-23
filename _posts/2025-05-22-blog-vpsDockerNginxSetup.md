@@ -7,7 +7,7 @@ tags: ["setup,linux"]
 
 # Nginx Docker Setup on a VPS
 
-```
+```sh
 mkdir ~/dockerDemo/html && cd ~/dockerDemo;
 echo 'hello world from docker using nginx' > html/index.html
 touch Dockerfile docker-compose.yml nginx.conf
