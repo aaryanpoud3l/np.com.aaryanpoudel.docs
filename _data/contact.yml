@@ -18,15 +18,15 @@
 #
 - type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/aaryanpoudel'                  # Fill with your Linkedin homepage
+  url:  'https://www.linkedin.com/in/aaryanpoud3l'                  # Fill with your Linkedin homepage
 
 - type: instagram
   icon: 'fab fa-instagram'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.instagram.com/aaryanpoudel' 
+  url:  'https://www.instagram.com/aaryanpoud3l' 
 
 - type: rss
   icon: "fas fa-rss"
-  noblank: true 
+  noblank: true
 #
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
