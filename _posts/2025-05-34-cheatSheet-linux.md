@@ -31,3 +31,11 @@ Defaults:
 2. General File: 664
 3. Deployment Folder: 755
 4. Deployment File: 644
+
+### Tips:
+
+Executing scripts without entering password
+```sh
+sudo visudo #or sudo nano /etc/sudoers
+userName ALL=(ALL) NOPASSWD: /pathToScript # add to the eof
+```
