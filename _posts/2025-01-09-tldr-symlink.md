@@ -30,3 +30,8 @@ rm -rf ~/symlinkFile
 ```bash
 ln ~/path/to/original ~/symlinkFile
 ```
+
+3. Ownership:
+```bash
+chown -h $USER:$USER ~/symlinkFile
+```
