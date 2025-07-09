@@ -1,5 +1,5 @@
 ---
-title: "OSS Application Playground"
+title: "AI Gen Models"
 date: 2025-07-09T21:02:00+00:00
 categories: ['Blogs']
 tags: ["blog"] 
