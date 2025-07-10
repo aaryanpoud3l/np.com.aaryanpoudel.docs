@@ -2,9 +2,9 @@
 
   ## Public Repo of Docxarray
 
-  URL: [aaryanpoudel.com.np](https://aaryanpoudel.com.np)
+  URL: [docs.aaryanpoudel.com.np](https://docs.aaryanpoudel.com.np)
   
-  Content Using: [Markdown](https://github.com/aaryanpoudel/til/blob/master/dev/docs/markdown.md)
+  Content Using: [Markdown](https://github.com/aaryanpoud3l/til/blob/master/dev/docs/markdown.md)
 
   Package Used: [Jekyll](https://jekyllrb.com/docs/)
 
