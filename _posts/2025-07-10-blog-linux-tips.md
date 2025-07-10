@@ -16,6 +16,7 @@ tags: ["blog","linux"]
 ### Usage:
 
 1. visudo
+
 ```sh
 sudo visudo
 
@@ -27,12 +28,14 @@ _Parameters_
 - _targetUser: user as whom the command should run (e.g., root)_
 
 _For security:_
+
 ```sh
 sudo chown root:root /home/userName/sh/myScript.sh
 sudo chmod 700 /home/userName/sh/myScript.sh
 ```
 
 2. realpath
+
 ```sh
 realpath ~/Documents/ # gives absolute path
 ```
