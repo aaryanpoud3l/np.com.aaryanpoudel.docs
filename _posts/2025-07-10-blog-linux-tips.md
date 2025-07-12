@@ -39,3 +39,15 @@ sudo chmod 700 /home/userName/sh/myScript.sh
 ```sh
 realpath ~/Documents/ # gives absolute path
 ```
+
+---
+
+3. fzf
+```
+# Add function as alias to ~/.zshrc or ~/.bashrc avoid loop
+fz(){
+  vi "$(fzf)"
+}
+
+source ~/.zshrc
+```
